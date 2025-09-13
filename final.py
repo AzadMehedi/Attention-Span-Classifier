@@ -903,110 +903,88 @@ elif page == "📊 Analysis":
 # --- Page 3: Prediction ---
 elif page == "😎 Prediction":
     import pandas as pd
-    from sklearn.model_selection import train_test_split
-    from sklearn.preprocessing import LabelEncoder, StandardScaler
-    from sklearn.metrics import classification_report, accuracy_score
-    from imblearn.over_sampling import SMOTE
-    import xgboost as xgb
     import streamlit as st
+    from sklearn.preprocessing import LabelEncoder, StandardScaler
+    from imblearn.over_sampling import SMOTE
+    from sklearn.model_selection import train_test_split
+    import xgboost as xgb
     from PIL import Image
     import pickle
 
-    # Dataset লোড
-    df = load_data()  # তোমার custom load_data function
+    # ------------------------------
+    # Caching model, scaler, encoders
+    # ------------------------------
+    @st.cache_resource
+    def load_resources():
+        df = load_data()
 
-    # Target তৈরি
-    def categorize_attention(score):
-        if score <= 10:
-            return 'Low'
-        elif score <= 30:
-            return 'Medium'
-        else:
-            return 'High'
+        # Target
+        def categorize_attention(score):
+            if score <= 10: return 'Low'
+            elif score <= 30: return 'Medium'
+            else: return 'High'
+        df['attention_category'] = df['average_attention_span'].apply(categorize_attention)
 
-    df['attention_category'] = df['average_attention_span'].apply(categorize_attention)
+        # Features & target
+        target_col = 'attention_category'
+        X = df.drop(columns=[target_col, 'average_attention_span'])
+        y = df[target_col]
 
-    # Features এবং Target সেট করা
-    target_col = 'attention_category'
-    X = df.drop(columns=[target_col, 'average_attention_span'])
-    y = df[target_col]
+        # Encode categorical
+        categorical_columns = [col for col in X.columns if X[col].dtype == 'object']
+        encoders = {}
+        for col in categorical_columns:
+            le_col = LabelEncoder()
+            X[col] = le_col.fit_transform(X[col].astype(str))
+            encoders[col] = le_col
+
+        # Target encode
+        le = LabelEncoder()
+        y_encoded = le.fit_transform(y)
+
+        # Scaler
+        scaler = StandardScaler()
+        X_scaled = scaler.fit_transform(X)
+
+        # SMOTE
+        smote = SMOTE(random_state=42)
+
+        # ------------------------------
+        # Use previous Top 10 features (hard-coded)
+        # ------------------------------
+        top_features = [
+            'max_continuous_reading_time', 'study_hours_home', 'practice_meditation',
+            'watch_short_videos', 'difficulty_focusing_online_class', 'use_digital_devices_while_studying',
+            'regular_physical_activity', 'attention_in_class', 'mental_fatigue_frequency', 'relationship_status'
+        ]
+
+        X_top = X[top_features]
+        X_top_scaled = scaler.fit_transform(X_top)
+        X_res_top, y_res_top = smote.fit_resample(X_top_scaled, y_encoded)
+
+        model_top = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
+        model_top.fit(X_res_top, y_res_top)
+
+        return df, X, le, scaler, encoders, model_top, top_features
+
+    df, X, le, scaler, encoders, model_top, top_features = load_resources()
 
     # ------------------------------
-    # 🔹 Encode categorical columns and save encoders
-    # ------------------------------
-    categorical_columns = [col for col in X.columns if X[col].dtype == 'object']
-    encoders = {}
-    for col in categorical_columns:
-        le_col = LabelEncoder()
-        X[col] = le_col.fit_transform(X[col].astype(str))
-        encoders[col] = le_col
-
-    # Save encoders for later prediction
-    with open('encoders.pkl', 'wb') as f:
-        pickle.dump(encoders, f)
-
-    # Target Encode
-    le = LabelEncoder()
-    y_encoded = le.fit_transform(y)
-
-    # Feature scaling
-    scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
-
-    # SMOTE প্রয়োগ করে ইমব্যালেন্স ঠিক করা
-    smote = SMOTE(random_state=42)
-    X_res, y_res = smote.fit_resample(X_scaled, y_encoded)
-
-    # Train-test split
-    X_train, X_test, y_train, y_test = train_test_split(
-        X_res, y_res, test_size=0.2, stratify=y_res, random_state=42
-    )
-
-    # XGBoost classifier (All features)
-    model_full = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
-    model_full.fit(X_train, y_train)
-
-    # Feature Importance
-    importances = model_full.feature_importances_
-    feature_importance_df = pd.DataFrame({
-        'feature': X.columns,
-        'importance': importances
-    }).sort_values(by='importance', ascending=False)
-
-    # Top 10 features
-    top_features = feature_importance_df['feature'].head(10).tolist()
-
-    # ------------------------------
-    # 🔹 Retrain only on Top 10 features
-    # ------------------------------
-    X_top = X[top_features]
-    X_top_scaled = scaler.fit_transform(X_top)  # reuse scaler for top features
-    X_res_top, y_res_top = smote.fit_resample(X_top_scaled, y_encoded)
-
-    X_train_top, X_test_top, y_train_top, y_test_top = train_test_split(
-        X_res_top, y_res_top, test_size=0.2, stratify=y_res_top, random_state=42
-    )
-
-    model_top = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
-    model_top.fit(X_train_top, y_train_top)
-
-    # ------------------------------
-    # 🔹 Streamlit UI
+    # Streamlit UI
     # ------------------------------
     st.title("`Prediction: Attention Category`")
-    img = Image.open("imgs/predic.png")  
+    img = Image.open("imgs/predic.png")
     st.image(img)
     st.subheader('`Attention Span Classifier - XGBoost Model`')
 
-    # Classification Report & Recommendation checkboxes
     col1, col2 = st.columns(2)
     with col1:
         classification_report_chk = st.checkbox('Show Classification Report')
     with col2:
-        recomendation_chk = st.checkbox('Recomendation & Implication')
+        recommendation_chk = st.checkbox('Recommendation & Implication')
 
     classification_report_top10 = '''
-    #### 📊 `Classification Report (for top 10 features)`
+    #### 📊 Classification Report (Top 10 features)
     | Class   | Precision | Recall | F1-Score | Support |
     |---------|-----------|--------|----------|---------|
     | High    | 0.82      | 0.76   | 0.79     | 37      |
@@ -1016,8 +994,8 @@ elif page == "😎 Prediction":
     | **Macro Avg**| 0.71  | 0.70   | 0.70     | 111     |
     | **Weighted Avg**| 0.71 | 0.70 | 0.70    | 111     |
     '''
-    recomendation_implication = '''
-    #### ✅ `Recommendation & Implication for students & Institutions`
+    recommendation_implication = '''
+    #### ✅ Recommendation & Implication for students & institutions
     | 🎓 Students                                           | 🏫 Educators & Institutions               | 🏛️ Policy Makers                                       |
     | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------- |
     | Prioritize sustained reading tasks                    | Introduce digital mindfulness programs    | National guidelines on screen time for students         |
@@ -1028,31 +1006,22 @@ elif page == "😎 Prediction":
     |                                                       | Use predictive insights for early support |                                                         |
     '''
 
-    if classification_report_chk:
-        st.write(classification_report_top10)
-    if recomendation_chk:
-        st.write(recomendation_implication)
+    if classification_report_chk: st.write(classification_report_top10)
+    if recommendation_chk: st.write(recommendation_implication)
 
     # ------------------------------
-    # Sidebar Prediction Input
+    # Sidebar user input
     # ------------------------------
-    # Load encoders
-    with open('encoders.pkl', 'rb') as f:
-        encoders = pickle.load(f)
-
     def user_report(top_features, df):
         user_report_data = {}
         for feature in top_features:
             if df[feature].dtype in ['int64', 'float64']:
-                min_val = float(df[feature].min())
-                max_val = float(df[feature].max())
-                mean_val = float(df[feature].mean())
+                min_val, max_val, mean_val = float(df[feature].min()), float(df[feature].max()), float(df[feature].mean())
                 val = st.sidebar.slider(f"{feature}", min_val, max_val, mean_val)
-                user_report_data[feature] = val
             else:
                 options = df[feature].dropna().unique().tolist()
                 val = st.sidebar.selectbox(f"{feature}", options)
-                user_report_data[feature] = val
+            user_report_data[feature] = val
         return pd.DataFrame(user_report_data, index=[0])
 
     show_input = st.sidebar.checkbox('Show Prediction Options:')
@@ -1061,23 +1030,16 @@ elif page == "😎 Prediction":
         st.write("### User Input for Top 10 Features")
         st.write(user_data)
 
-        if st.button('Predict Attention Span'):
-            with st.spinner('Predicting...'):
-                # Encode categorical
-                for col in user_data.columns:
-                    if col in X.columns and df[col].dtype == 'object':
-                        user_data[col] = encoders[col].transform(user_data[col].astype(str))
-
-                # Scale input
-                input_scaled = scaler.transform(user_data)
-
-                # Predict
-                pred_encoded = model_top.predict(input_scaled)
-                pred_class = le.inverse_transform(pred_encoded)[0]
-
-                pred_proba = model_top.predict_proba(input_scaled)
-                pred_index = pred_encoded[0]
-                prob_percent = pred_proba[0][pred_index] * 100
-
-                st.subheader('Predicted Attention Span Category')
-                st.subheader(f"**{pred_class}** ({prob_percent:.2f}% probability for this input)")
+        # ------------------------------
+        # Real-time Prediction (Optimized)
+        # ------------------------------
+        with st.spinner('Predicting...'):
+            for col in user_data.columns:
+                if col in X.columns and df[col].dtype == 'object':
+                    user_data[col] = encoders[col].transform(user_data[col].astype(str))
+            input_scaled = scaler.transform(user_data)
+            pred_encoded = model_top.predict(input_scaled)
+            pred_class = le.inverse_transform(pred_encoded)[0]
+            pred_proba = model_top.predict_proba(input_scaled)[0][pred_encoded[0]] * 100
+            st.subheader('Predicted Attention Span Category')
+            st.subheader(f"**{pred_class}** ({pred_proba:.2f}% probability)")
