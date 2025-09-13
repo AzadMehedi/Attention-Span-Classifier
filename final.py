@@ -21,6 +21,8 @@ def load_data():
 
 
 # --- Sidebar Navigation ---
+img = Image.open('imgs/sidebar3.png')
+st.sidebar.image(img)
 page = st.sidebar.radio("📑 Pages👇", ["🏠 Home", "📊 Analysis", "😎 Prediction"])
 
 # --- Page 1: Home ---
@@ -1095,5 +1097,6 @@ elif page == "😎 Prediction":
         top10_imp = st.checkbox('`Feature Importance(Top 10)`')
     if top10_imp:
         st.dataframe(feature_importance_df.head(10))
+
 
 
