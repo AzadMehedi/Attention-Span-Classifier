@@ -1016,8 +1016,12 @@ elif page == "😎 Prediction":
         user_report_data = {}
         for feature in top_features:
             if df[feature].dtype in ['int64', 'float64']:
-                min_val, max_val, mean_val = float(df[feature].min()), float(df[feature].max()), float(df[feature].mean())
-                val = st.sidebar.slider(f"{feature}", min_val, max_val, mean_val)
+                if feature == 'max_continuous_reading_time':
+                # এই ফিচারের জন্য কাস্টম রেঞ্জ
+                    val = st.sidebar.slider(f"{feature}", 0.0, 50.0, 30.0)
+                else:
+                    min_val, max_val, mean_val = float(df[feature].min()), float(df[feature].max()), float(df[feature].mean())
+                    val = st.sidebar.slider(f"{feature}", min_val, max_val, mean_val)
             else:
                 options = df[feature].dropna().unique().tolist()
                 val = st.sidebar.selectbox(f"{feature}", options)
@@ -1043,3 +1047,4 @@ elif page == "😎 Prediction":
             pred_proba = model_top.predict_proba(input_scaled)[0][pred_encoded[0]] * 100
             st.subheader('Predicted Attention Span Category')
             st.subheader(f"**{pred_class}** ({pred_proba:.2f}% probability)")
+
