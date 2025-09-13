@@ -914,7 +914,7 @@ elif page == "😎 Prediction":
     import streamlit as st
 
     # Dataset লোড
-    # df = pd.read_csv("cleaned_dataset.csv")
+    df = pd.read_csv("cleaned_dataset.csv")
 
     # Target তৈরি
     def categorize_attention(score):
@@ -1138,6 +1138,7 @@ elif page == "😎 Prediction":
         # Output
         st.subheader('`Predicted Attention Span Category`')
         st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
+
 
 
 
