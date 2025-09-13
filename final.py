@@ -907,12 +907,12 @@ elif page == "😎 Prediction":
     from sklearn.preprocessing import LabelEncoder, StandardScaler
     from imblearn.over_sampling import SMOTE
     from sklearn.model_selection import train_test_split
+    from sklearn.metrics import accuracy_score
     import xgboost as xgb
     from PIL import Image
-    import pickle
 
     # ------------------------------
-    # Caching model, scaler, encoders
+    # Cached training pipeline
     # ------------------------------
     @st.cache_resource
     def load_resources():
@@ -925,12 +925,11 @@ elif page == "😎 Prediction":
             else: return 'High'
         df['attention_category'] = df['average_attention_span'].apply(categorize_attention)
 
-        # Features & target
         target_col = 'attention_category'
         X = df.drop(columns=[target_col, 'average_attention_span'])
         y = df[target_col]
 
-        # Encode categorical
+        # Encode categorical features
         categorical_columns = [col for col in X.columns if X[col].dtype == 'object']
         encoders = {}
         for col in categorical_columns:
@@ -938,36 +937,67 @@ elif page == "😎 Prediction":
             X[col] = le_col.fit_transform(X[col].astype(str))
             encoders[col] = le_col
 
-        # Target encode
+        # Encode target
         le = LabelEncoder()
         y_encoded = le.fit_transform(y)
 
-        # Scaler
+        # Scale
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
-        # SMOTE
+        # SMOTE (all features)
         smote = SMOTE(random_state=42)
+        X_res, y_res = smote.fit_resample(X_scaled, y_encoded)
 
-        # ------------------------------
-        # Use previous Top 10 features (hard-coded)
-        # ------------------------------
-        top_features = [
-            'max_continuous_reading_time', 'study_hours_home', 'practice_meditation',
-            'watch_short_videos', 'difficulty_focusing_online_class', 'use_digital_devices_while_studying',
-            'regular_physical_activity', 'attention_in_class', 'mental_fatigue_frequency', 'relationship_status'
-        ]
+        # Train-test split
+        X_train, X_test, y_train, y_test = train_test_split(
+            X_res, y_res, test_size=0.2, stratify=y_res, random_state=42
+        )
 
+        # Train model (all features)
+        model_full = xgb.XGBClassifier(
+            use_label_encoder=False,
+            eval_metric='mlogloss',
+            random_state=42
+        )
+        model_full.fit(X_train, y_train)
+
+        # Accuracy with all features
+        y_pred_full = model_full.predict(X_test)
+        acc_full = accuracy_score(y_test, y_pred_full)
+
+        # Feature importance
+        importances = model_full.feature_importances_
+        feature_importance_df = pd.DataFrame({
+            'feature': X.columns,
+            'importance': importances
+        }).sort_values(by='importance', ascending=False)
+
+        top_features = feature_importance_df['feature'].head(10).tolist()
+
+        # Retrain on top 10 features
         X_top = X[top_features]
         X_top_scaled = scaler.fit_transform(X_top)
         X_res_top, y_res_top = smote.fit_resample(X_top_scaled, y_encoded)
 
-        model_top = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
-        model_top.fit(X_res_top, y_res_top)
+        X_train_top, X_test_top, y_train_top, y_test_top = train_test_split(
+            X_res_top, y_res_top, test_size=0.2, stratify=y_res_top, random_state=42
+        )
 
-        return df, X, le, scaler, encoders, model_top, top_features
+        model_top = xgb.XGBClassifier(
+            use_label_encoder=False,
+            eval_metric='mlogloss',
+            random_state=42
+        )
+        model_top.fit(X_train_top, y_train_top)
 
-    df, X, le, scaler, encoders, model_top, top_features = load_resources()
+        # Accuracy with top 10 features
+        y_pred_top = model_top.predict(X_test_top)
+        acc_top = accuracy_score(y_test_top, y_pred_top)
+
+        return df, X, le, scaler, encoders, model_top, top_features, acc_full, acc_top, feature_importance_df
+
+    df, X, le, scaler, encoders, model_top, top_features, acc_full, acc_top, feature_importance_df = load_resources()
 
     # ------------------------------
     # Streamlit UI
@@ -991,7 +1021,7 @@ elif page == "😎 Prediction":
     | Low     | 0.63      | 0.78   | 0.70     | 37      |
     | Medium  | 0.68      | 0.57   | 0.62     | 37      |
     | **Accuracy** |       |        | 0.70     | 111     |
-    | **Macro Avg**| 0.71  | 0.70   | 0.70     | 111     |
+    | **Macro Avg**| 0.71  | 0.70  | 0.70     | 111     |
     | **Weighted Avg**| 0.71 | 0.70 | 0.70    | 111     |
     '''
     recommendation_implication = '''
@@ -1009,6 +1039,8 @@ elif page == "😎 Prediction":
     if classification_report_chk: st.write(classification_report_top10)
     if recommendation_chk: st.write(recommendation_implication)
 
+ 
+
     # ------------------------------
     # Sidebar user input
     # ------------------------------
@@ -1017,7 +1049,6 @@ elif page == "😎 Prediction":
         for feature in top_features:
             if df[feature].dtype in ['int64', 'float64']:
                 if feature == 'max_continuous_reading_time':
-                # এই ফিচারের জন্য কাস্টম রেঞ্জ
                     val = st.sidebar.slider(f"{feature}", 0.0, 50.0, 30.0)
                 else:
                     min_val, max_val, mean_val = float(df[feature].min()), float(df[feature].max()), float(df[feature].mean())
@@ -1027,16 +1058,17 @@ elif page == "😎 Prediction":
                 val = st.sidebar.selectbox(f"{feature}", options)
             user_report_data[feature] = val
         return pd.DataFrame(user_report_data, index=[0])
+  
 
     show_input = st.sidebar.checkbox('Show Prediction Options:')
     if show_input:
+        '---'
         user_data = user_report(top_features, df)
-        st.write("### User Input for Top 10 Features")
+        st.subheader('`Predicted Attention Span Category`')
+        st.write("`User Input for Top 10 Features`")
         st.write(user_data)
 
-        # ------------------------------
-        # Real-time Prediction (Optimized)
-        # ------------------------------
+        # Real-time Prediction
         with st.spinner('Predicting...'):
             for col in user_data.columns:
                 if col in X.columns and df[col].dtype == 'object':
@@ -1045,6 +1077,22 @@ elif page == "😎 Prediction":
             pred_encoded = model_top.predict(input_scaled)
             pred_class = le.inverse_transform(pred_encoded)[0]
             pred_proba = model_top.predict_proba(input_scaled)[0][pred_encoded[0]] * 100
-            st.subheader('Predicted Attention Span Category')
-            st.subheader(f"**{pred_class}** ({pred_proba:.2f}% probability)")
+            st.subheader(f" `Predicted Category`: **`{pred_class}`** (`{pred_proba:.2f}% probability`)")
+
+    
+
+       # ------------------------------
+    # Extra model results (কমেন্ট করে রাখা হলো)
+    # ------------------------------
+    st.write('---')
+    st.subheader("🔎 `Model Accuracy Comparison`")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.write(f"**`Accuracy with ALL ({X.shape[1]} features)`:** `{acc_full*100:.2f}%`")
+    with col2:
+        st.write(f"**`Accuracy with TOP 10 features`:** `{acc_top*100:.2f}%`")
+    with col3:
+        top10_imp = st.checkbox('`Feature Importance(Top 10)`')
+        if top10_imp:
+            st.dataframe(feature_importance_df.head(10))
 
