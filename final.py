@@ -14,6 +14,12 @@ from warnings import filterwarnings
 filterwarnings('ignore')
 
 
+
+@st.cache_data
+def load_data():
+    return pd.read_csv("cleaned_dataset.csv")
+
+
 # --- Sidebar Navigation ---
 page = st.sidebar.radio("📑 Pages👇", ["🏠 Home", "📊 Analysis", "😎 Prediction"])
 
@@ -30,7 +36,7 @@ if page == "🏠 Home":
 
     st.markdown("""
     ### 📖 Project Overview
-    This project is developed based on my M.Sc. thesis, titled 
+    This project is developed based on my `M.Sc. thesis` titled 
     #####  `"An Assessment of Attention Span among College Students in Dhaka: Patterns, Potential Implications, and Influencing Factors"`
     """)
     '---'
@@ -129,21 +135,19 @@ if page == "🏠 Home":
                 - `Medium: (score 11-30 min)`
                 - `Low: (score<=10 min)`
                 - This setup `excluded` the direct use of `average_attention_span as a predictor`, ensuring a more `reliable and unbiased` classification outcome.
-       
 
             - Feature Engineering: 
                 - `Label Encoding` (for `converting Categorical data into Numerical`)
                 - `Standard Scaler` (for `Scaling Numeric data`)
-                - `SMOTE` (for `handling class imbalance`)
-     
+                - `SMOTE` (for `handing class imbalance`)
 
             - Model Training: 
-                - The dataset was `split` using `stratified sampling` to maintain `class balance` in both the `training set` and the `testing set`.
+                - The dataset was `split` using `stratified sampling` to maintain `class balance` in both `training & testing set`.
                 - `Training set`: `80%` of the data
                 - `Testing set`: `20%` of the data
         ''')
 
-    # Dashboard
+    # Figures
     
 
 
@@ -159,7 +163,7 @@ elif page == "📊 Analysis":
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
-    import seaborn as sns
+    # import seaborn as sns
     import streamlit as st
     import sys
     import os
@@ -183,7 +187,8 @@ elif page == "📊 Analysis":
 
     ###############################################################################################
     # Load the Dataset
-    df = pd.read_csv('cleaned_dataset.csv')
+    # df = pd.read_csv('D:/Mehedi Azad/Streamlit/attention_span/cleaned_dataset.csv')
+    df = load_data()
     # basic information about dataset
     rows = df.shape[0]
     cols = df.shape[1]
@@ -742,7 +747,7 @@ elif page == "📊 Analysis":
         st.dataframe(chi_df)
 
     with col3:
-        trends = st.checkbox('Significant Trends Analysis(p < 0.05) Results')
+        trends = st.checkbox('Significant Trends Analysis(p < 0.05)')
     if trends:
         st.write('### `Significant Trends Analysis(p < 0.05) Results`')
         st.dataframe(trends_df)
@@ -897,24 +902,18 @@ elif page == "📊 Analysis":
 #################################################################################
 # --- Page 3: Prediction ---
 elif page == "😎 Prediction":
-    # st.subheader("📊 Prediction: Attention Span Classification")
-
-    # Model building & trainging
-
-    # XGBoost classifier with Top 10 feature retraining
-
     import pandas as pd
     from sklearn.model_selection import train_test_split
     from sklearn.preprocessing import LabelEncoder, StandardScaler
-    from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+    from sklearn.metrics import classification_report, accuracy_score
     from imblearn.over_sampling import SMOTE
     import xgboost as xgb
-    import matplotlib.pyplot as plt
-    import seaborn as sns
     import streamlit as st
+    from PIL import Image
+    import pickle
 
     # Dataset লোড
-    df = pd.read_csv("cleaned_dataset.csv")
+    df = load_data()  # তোমার custom load_data function
 
     # Target তৈরি
     def categorize_attention(score):
@@ -932,10 +931,19 @@ elif page == "😎 Prediction":
     X = df.drop(columns=[target_col, 'average_attention_span'])
     y = df[target_col]
 
-    # Categorical ফিচার Encode করা
-    for col in X.columns:
-        if X[col].dtype == 'object':
-            X[col] = LabelEncoder().fit_transform(X[col].astype(str))
+    # ------------------------------
+    # 🔹 Encode categorical columns and save encoders
+    # ------------------------------
+    categorical_columns = [col for col in X.columns if X[col].dtype == 'object']
+    encoders = {}
+    for col in categorical_columns:
+        le_col = LabelEncoder()
+        X[col] = le_col.fit_transform(X[col].astype(str))
+        encoders[col] = le_col
+
+    # Save encoders for later prediction
+    with open('encoders.pkl', 'wb') as f:
+        pickle.dump(encoders, f)
 
     # Target Encode
     le = LabelEncoder()
@@ -955,112 +963,50 @@ elif page == "😎 Prediction":
     )
 
     # XGBoost classifier (All features)
-    model_full = xgb.XGBClassifier(
-        use_label_encoder=False,
-        eval_metric='mlogloss',
-        random_state=42
-    )
+    model_full = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
     model_full.fit(X_train, y_train)
 
-    # Prediction (All features)
-    y_pred_full = model_full.predict(X_test)
-
-    acc_full = accuracy_score(y_test, y_pred_full)
-    print(f"📊 Accuracy with ALL features ({X.shape[1]} features): {acc_full*100:.2f}%")
-
-    ###########################################
-    # 🔹 Feature Importance বের করা
-    ###########################################
+    # Feature Importance
     importances = model_full.feature_importances_
     feature_importance_df = pd.DataFrame({
         'feature': X.columns,
         'importance': importances
     }).sort_values(by='importance', ascending=False)
 
-    print("\nTop 10 Important Features:\n", feature_importance_df.head(10))
-
-    # শীর্ষ 10 ফিচার বেছে নেয়া
+    # Top 10 features
     top_features = feature_importance_df['feature'].head(10).tolist()
 
-    ###########################################
+    # ------------------------------
     # 🔹 Retrain only on Top 10 features
-    ###########################################
-    # Important: StandardScaler দিয়ে আবার scale করতে হবে subset-এ
+    # ------------------------------
     X_top = X[top_features]
-    X_top_scaled = scaler.fit_transform(X_top)
-
-    # SMOTE আবার প্রয়োগ করা top features এ
+    X_top_scaled = scaler.fit_transform(X_top)  # reuse scaler for top features
     X_res_top, y_res_top = smote.fit_resample(X_top_scaled, y_encoded)
 
-    # Split
     X_train_top, X_test_top, y_train_top, y_test_top = train_test_split(
         X_res_top, y_res_top, test_size=0.2, stratify=y_res_top, random_state=42
     )
 
-    # XGBoost classifier (Top 10 features)
-    model_top = xgb.XGBClassifier(
-        use_label_encoder=False,
-        eval_metric='mlogloss',
-        random_state=42
-    )
+    model_top = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42)
     model_top.fit(X_train_top, y_train_top)
 
-    # Prediction (Top 10 features)
-    y_pred_top = model_top.predict(X_test_top)
-
-    acc_top = accuracy_score(y_test_top, y_pred_top)
-    print(f"📊 Accuracy with TOP 10 features: {acc_top*100:.2f}%")
-
-    ###########################################
-    # 🔹 Classification Reports
-    ###########################################
-    # print("\nClassification Report (All features):\n", classification_report(le.inverse_transform(y_test), le.inverse_transform(y_pred_full)))
-    # print("\nClassification Report (Top 10 features):\n", classification_report(le.inverse_transform(y_test_top), le.inverse_transform(y_pred_top)))
-
-
-
-
-
-
-
     # ------------------------------
+    # 🔹 Streamlit UI
     # ------------------------------
-    # Main Streamlit App
-    # Streamlit UI
-    # ------------------------------
-    # ------------------------------
-    # Streamlit Sidebar Input
-    # ------------------------------
+    st.title("`Prediction: Attention Category`")
+    img = Image.open("imgs/predic.png")  
+    st.image(img)
+    st.subheader('`Attention Span Classifier - XGBoost Model`')
 
-    # Function to take user input from sidebar
-    def user_report(top_features, df):
-        user_report_data = {}
+    # Classification Report & Recommendation checkboxes
+    col1, col2 = st.columns(2)
+    with col1:
+        classification_report_chk = st.checkbox('Show Classification Report')
+    with col2:
+        recomendation_chk = st.checkbox('Recomendation & Implication')
 
-        for feature in top_features:
-            if df[feature].dtype in ['int64', 'float64']:   # Numeric feature
-                if feature == 'max_continuous_reading_time':
-                    val = st.sidebar.slider(f"{feature}", 0.0, 100.0, 30.0)
-                else:
-                    min_val = float(df[feature].min())
-                    max_val = float(df[feature].max())
-                    mean_val = float(df[feature].mean())
-                    val = st.sidebar.slider(f"{feature}", min_val, max_val, mean_val)
-
-                user_report_data[feature] = val
-
-            else:   # Categorical feature
-                options = df[feature].dropna().unique().tolist()
-                val = st.sidebar.selectbox(f"{feature}", options)
-                user_report_data[feature] = val
-
-        report_data = pd.DataFrame(user_report_data, index=[0])
-        return report_data
-
-
-    ### 📊 Classification Report (Top 10 features)
-    classification_report_top10='''
+    classification_report_top10 = '''
     #### 📊 `Classification Report (for top 10 features)`
-
     | Class   | Precision | Recall | F1-Score | Support |
     |---------|-----------|--------|----------|---------|
     | High    | 0.82      | 0.76   | 0.79     | 37      |
@@ -1069,85 +1015,69 @@ elif page == "😎 Prediction":
     | **Accuracy** |       |        | 0.70     | 111     |
     | **Macro Avg**| 0.71  | 0.70   | 0.70     | 111     |
     | **Weighted Avg**| 0.71 | 0.70 | 0.70    | 111     |
-
+    '''
+    recomendation_implication = '''
+    #### ✅ `Recommendation & Implication for students & Institutions`
+    | 🎓 Students                                           | 🏫 Educators & Institutions               | 🏛️ Policy Makers                                       |
+    | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------- |
+    | Prioritize sustained reading tasks                    | Introduce digital mindfulness programs    | National guidelines on screen time for students         |
+    | Adopt structured study routines and breaks            | Redesign online learning platforms        | Infrastructure investment for healthy digital education |
+    | Limit short video consumption                         | Encourage interactive teaching methods    | Training for educators on attention-aware teaching      |
+    | Engage in regular physical activity & rest            | Provide mental health support             | Monitor and research digital health                     |
+    | Practice digital mindfulness and reduce notifications | Build digital-free zones or periods       | Public awareness campaigns                              |
+    |                                                       | Use predictive insights for early support |                                                         |
     '''
 
-# recomendation & implication for student, teachers & policymakers
-    recomendation_implication = '''
-                #### ✅ `Recomendation & Implecation for students & Institutions`
-| 🎓 Students                                           | 🏫 Educators & Institutions               | 🏛️ Policy Makers                                       |
-| ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------- |
-| Prioritize sustained reading tasks                    | Introduce digital mindfulness programs    | National guidelines on screen time for students         |
-| Adopt structured study routines and breaks            | Redesign online learning platforms        | Infrastructure investment for healthy digital education |
-| Limit short video consumption                         | Encourage interactive teaching methods    | Training for educators on attention-aware teaching      |
-| Engage in regular physical activity & rest            | Provide mental health support             | Monitor and research digital health                     |
-| Practice digital mindfulness and reduce notifications | Build digital-free zones or periods       | Public awareness campaigns                              |
-|                                                       | Use predictive insights for early support |                                                         |
-            '''
+    if classification_report_chk:
+        st.write(classification_report_top10)
+    if recomendation_chk:
+        st.write(recomendation_implication)
 
-    st.title("`Prediction: Attention Category`")
-    
-    img = Image.open("imgs/predic.png")  
-    st.image(img)
-    st.subheader('`Attention Span Classifier - XGBoost Model`')
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        classification_report=  st.checkbox('Show Classification Report')
-    if classification_report:
-            # st.write(classification_report(le.inverse_transform(y_test_top), le.inverse_transform(y_pred_top)))
-            st.write(classification_report_top10)
-    with col2:
-        recomendation = st.checkbox('Recomendation & Implecation')
-    if recomendation:
-            st.write(recomendation_implication)
+    # ------------------------------
+    # Sidebar Prediction Input
+    # ------------------------------
+    # Load encoders
+    with open('encoders.pkl', 'rb') as f:
+        encoders = pickle.load(f)
 
+    def user_report(top_features, df):
+        user_report_data = {}
+        for feature in top_features:
+            if df[feature].dtype in ['int64', 'float64']:
+                min_val = float(df[feature].min())
+                max_val = float(df[feature].max())
+                mean_val = float(df[feature].mean())
+                val = st.sidebar.slider(f"{feature}", min_val, max_val, mean_val)
+                user_report_data[feature] = val
+            else:
+                options = df[feature].dropna().unique().tolist()
+                val = st.sidebar.selectbox(f"{feature}", options)
+                user_report_data[feature] = val
+        return pd.DataFrame(user_report_data, index=[0])
 
-
-    ################################################################################
-    # Sidebar Checkbox value for prediction
-    show_input = st.sidebar.checkbox('`Show Prediction Options:`')
-
+    show_input = st.sidebar.checkbox('Show Prediction Options:')
     if show_input:
-        # Function call & save output 
         user_data = user_report(top_features, df)
-        
-        # Streamlit sidebar showing
-        st.write("### `User Input for Top 10 Features`")
+        st.write("### User Input for Top 10 Features")
         st.write(user_data)
 
-        # Encode categorical features if needed
-        for col in user_data.columns:
-            if col in X.columns and df[col].dtype == 'object':
-                user_data[col] = LabelEncoder().fit(df[col].astype(str)).transform(user_data[col].astype(str))
+        if st.button('Predict Attention Span'):
+            with st.spinner('Predicting...'):
+                # Encode categorical
+                for col in user_data.columns:
+                    if col in X.columns and df[col].dtype == 'object':
+                        user_data[col] = encoders[col].transform(user_data[col].astype(str))
 
-        # Scale input
-        input_scaled = scaler.transform(user_data)
+                # Scale input
+                input_scaled = scaler.transform(user_data)
 
-        # Prediction
-        pred_encoded = model_top.predict(input_scaled)
-        pred_class = le.inverse_transform(pred_encoded)[0]
+                # Predict
+                pred_encoded = model_top.predict(input_scaled)
+                pred_class = le.inverse_transform(pred_encoded)[0]
 
-        # Prediction probability
-        pred_proba = model_top.predict_proba(input_scaled)  # array shape (1, n_classes)
-        # pred_proba[0] হলো row, আমরা current predicted class এর probability নেব
-        pred_index = pred_encoded[0]  # encoded value index
-        prob_percent = pred_proba[0][pred_index] * 100  # percentage
+                pred_proba = model_top.predict_proba(input_scaled)
+                pred_index = pred_encoded[0]
+                prob_percent = pred_proba[0][pred_index] * 100
 
-
-        # Output
-        st.subheader('`Predicted Attention Span Category`')
-        st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
-
-
-
-
-
-
-
-
-
-
-
-
-
+                st.subheader('Predicted Attention Span Category')
+                st.subheader(f"**{pred_class}** ({prob_percent:.2f}% probability for this input)")
