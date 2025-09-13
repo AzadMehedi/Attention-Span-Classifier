@@ -308,26 +308,31 @@ elif page == "📊 Analysis":
     with col1:
         show_num_stat = st.checkbox('Numeric Features Stats')
     if show_num_stat:
+        st.write('Numeric Features Statistics')
         st.write(numeric_stats)
 
     with col2:
         show_cat_stat = st.checkbox('Categorical Features Stats')
     if show_cat_stat:
+        st.write('Categorical Features Statistics')
         st.write(categorical_stats)
 
     with col3:  
         unique_df = st.checkbox('Unique values of Columns')
     if unique_df:
+        st.write('Unique values of Columns')
         st.write(unique_values_df)
 
     with col4:
         n_cols = st.checkbox('Numeric Columns')
     if n_cols:
+        st.write('Numeric Columns List')
         st.write(num_cols)
 
     with col5:
         c_cols = st.checkbox('Categorical Columns')
     if c_cols:
+        st.write('Categorical Columns List')
         st.write(cat_cols)
     st.write('---')
         
@@ -727,32 +732,38 @@ elif page == "📊 Analysis":
     with col1:
         eda = st.checkbox('EDA insights')
     if eda:
+        st.write('### `Exploratory Data Analysis Insights`')
         st.dataframe(eda_df)
 
     with col2:
         chi = st.checkbox("Chi-square Test Analysis")
     if chi:
+        st.write('### `Chi-square Test Analysis Insights`')
         st.dataframe(chi_df)
 
     with col3:
-        trends = st.checkbox('Significant Trends Analysis(p < 0.05)')
+        trends = st.checkbox('Significant Trends Analysis(p < 0.05) Results')
     if trends:
+        st.write('### `Significant Trends Analysis(p < 0.05) Results`')
         st.dataframe(trends_df)
 
     with col4:
         corr = st.checkbox('Correlation Coefficients Analysis')
+        st.write('### `Correlation Coefficients Analysis Results`')
     if corr:
         st.dataframe(corr_df)
 
     with col5:
         hypothesis = st.checkbox('Hypothesis Tests Analysis')
     if hypothesis:
+        st.write('### `Hypothesis Tests Analysis Results`')
         st.dataframe(hypothesis_df)
         # st.write(hypothesis_table)
 
     with col6:
         research = st.checkbox('Research Questions Results')
     if research:
+        st.write('### `Research Questions Results`')
         st.dataframe(df_rq)
         # st.write(research_question_table)
     st.write('---')
@@ -1127,6 +1138,7 @@ elif page == "😎 Prediction":
         # Output
         st.subheader('`Predicted Attention Span Category`')
         st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
+
 
 
 
