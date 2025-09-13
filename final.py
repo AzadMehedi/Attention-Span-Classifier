@@ -128,20 +128,20 @@ if page == "🏠 Home":
                 - `High: (score>30 min)`
                 - `Medium: (score 11-30 min)`
                 - `Low: (score<=10 min)`
-            - This setup `excluded` the direct use of `average_attention_span as a predictor`, ensuring a more `reliable and unbiased` classification outcome.
+                - This setup `excluded` the direct use of `average_attention_span as a predictor`, ensuring a more `reliable and unbiased` classification outcome.
 
             - Feature Engineering: 
                 - `Label Encoding` (for `converting Categorical data into Numerical`)
                 - `Standard Scaler` (for `Scaling Numeric data`)
-                - `SMOTE` (for `handing class imbalance`)
+                - `SMOTE` (for `handling class imbalance`)
 
             - Model Training: 
-                - The dataset was `split` using `stratified sampling` to maintain `class balance` in both `training & testing set`.
+                - The dataset was `split` using `stratified sampling` to maintain `class balance` in both the `training set` and the `testing set`.
                 - `Training set`: `80%` of the data
                 - `Testing set`: `20%` of the data
         ''')
 
-    # Figures
+    # Dashboard
     
 
 
@@ -1125,6 +1125,7 @@ elif page == "😎 Prediction":
         # Output
         st.subheader('`Predicted Attention Span Category`')
         st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
+
 
 
 
