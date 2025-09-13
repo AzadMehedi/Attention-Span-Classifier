@@ -1,0 +1,350 @@
+age,gender,education_level,relationship_status,institution_location,study_hours_home,attention_in_class,average_attention_span,most_attentive_time,study_break_frequency,follow_study_routine,unintentional_inattention,daily_digital_device_usage,most_used_digital_platform,use_digital_devices_while_studying,device_usage_purpose,have_social_media_account,watch_short_videos,avoid_notifications,tried_reduce_screen_time,difficulty_focusing_online_class,biggest_study_distraction,max_continuous_reading_time,mental_fatigue_frequency,attention_span_decreased,pre_study_anxiety,family_friends_pressure_effect,regular_sufficient_sleep,regular_physical_activity,practice_meditation,digital_device_stress
+19,Male,HSC,Single,City,1,No,5,Evening,15,No,Yes,4,Facebook,Very Often,Entertainment,Yes,Sometimes,No,Sometimes,Sometimes,Others,15,Rarely,Yes,Rarely,No,Sometimes,No,No,Not sure
+16,Female,HSC,Single,City,2,Sometimes,15,Late Night,15,No,Sometimes,6,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,No,Sometimes,Daydreams,3,Sometimes,Yes,Never,Sometimes,Sometimes,Sometimes,No,Yes
+19,Female,HSC,Married,City,4,Sometimes,60,Morning,0,No,Sometimes,2,Facebook,Rarely,Entertainment,Yes,No,Sometimes,Yes,Yes,Noise,15,Sometimes,Yes,Rarely,Yes,Sometimes,Sometimes,No,Not sure
+18,Male,HSC,Single,City,2,Sometimes,10,Morning,15,No,Yes,4,Twitter,Sometimes,Education,Yes,Sometimes,Sometimes,Yes,No,Daydreams,3,Sometimes,Yes,Sometimes,Yes,Yes,No,No,Yes
+17,Male,HSC,Single,City,1,No,10,Morning,0,No,Sometimes,6,Facebook,Never,Education,Yes,Sometimes,Yes,Yes,Yes,Daydreams,30,Often,Yes,Never,Yes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,7,Yes,60,Morning,0,Yes,Sometimes,2,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Never,Others,30,Sometimes,Not sure,Never,No,Yes,No,No,No
+18,Male,HSC,Single,Suburban,1,No,5,Late Night,15,No,Yes,8,Facebook,Rarely,Entertainment,Yes,Yes,No,Yes,Yes,Daydreams,3,Often,Yes,Often,Sometimes,Sometimes,No,No,Yes
+16,Male,HSC,Single,City,2,Sometimes,30,Morning,30,No,Sometimes,4,Facebook,Sometimes,Education,Yes,Sometimes,Yes,No,No,Noise,15,Often,Yes,Often,Yes,Yes,Sometimes,No,Yes
+17,Female,HSC,Single,City,6,Yes,30,Late Night,60,Yes,Sometimes,2,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,No,Daydreams,30,Rarely,No,Sometimes,Yes,Yes,Sometimes,No,Yes
+18,Male,HSC,Single,Suburban,6,Sometimes,30,Afternoon,0,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,No,Yes,Yes,Sometimes,Daydreams,15,Sometimes,Not sure,Sometimes,Sometimes,No,No,No,Not sure
+18,Male,HSC,Single,Suburban,6,Sometimes,30,Morning,15,Yes,Yes,2,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Yes,Sometimes,Yes,Sometimes,No,No,Not sure
+18,Male,HSC,Single,City,2,Sometimes,5,Morning,15,No,Yes,2,Facebook,Sometimes,Entertainment,Yes,Yes,Sometimes,No,Sometimes,Daydreams,3,Sometimes,Yes,Often,Sometimes,No,No,No,Not sure
+17,Male,HSC,Single,City,4,Sometimes,10,Morning,15,No,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Yes,Sometimes,No,Yes,Daydreams,3,Often,Yes,Sometimes,Sometimes,Sometimes,No,No,Yes
+18,Male,HSC,Single,Suburban,4,Yes,10,Late Night,15,No,Yes,6,Facebook,Very Often,Entertainment,Yes,Yes,No,Yes,Yes,Notifications,10,Often,Yes,Often,Yes,No,Yes,Sometimes,Yes
+17,Male,HSC,Single,Suburban,4,No,30,Late Night,60,Yes,Yes,4,Others,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Noise,30,Often,No,Never,No,Sometimes,Sometimes,No,No
+17,Male,HSC,Single,City,4,Sometimes,30,Late Night,30,No,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Yes,No,Yes,Sometimes,Notifications,30,Often,Yes,Often,Sometimes,No,No,No,Yes
+19,Male,HSC,Single,City,6,Sometimes,15,Evening,0,Yes,Sometimes,2,YouTube,Very Often,Entertainment,Yes,No,Yes,Yes,No,Noise,15,Sometimes,No,Rarely,No,Yes,Sometimes,No,No
+18,Male,HSC,Single,City,4,Sometimes,15,Morning,60,No,Yes,6,Facebook,Very Often,Entertainment,Yes,Yes,No,Yes,Yes,Daydreams,10,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,No,Yes
+17,Male,HSC,Single,City,4,No,15,Late Night,0,No,Yes,6,Others,Sometimes,Entertainment,Yes,No,Yes,Yes,Yes,Daydreams,30,Often,Yes,Sometimes,No,Yes,No,No,No
+18,Male,HSC,Single,City,4,Yes,30,Evening,60,Yes,Sometimes,4,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,No,Noise,15,Sometimes,No,Often,Sometimes,Sometimes,Yes,No,Yes
+18,Male,HSC,Single,City,4,Sometimes,5,Morning,30,No,Sometimes,6,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,No,Yes,Notifications,30,Sometimes,No,Sometimes,No,Yes,Yes,No,Not sure
+18,Male,HSC,Single,City,2,Yes,30,Late Night,30,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Sometimes,No,Sometimes,No,No,Yes
+18,Male,HSC,Single,Suburban,1,Yes,10,Morning,60,No,Yes,8,Facebook,Sometimes,Entertainment,Yes,No,No,Yes,Yes,Daydreams,30,Often,Yes,Never,Yes,Yes,Yes,No,Yes
+17,Male,HSC,Single,City,6,Yes,60,Evening,60,Yes,No,2,YouTube,Never,Education,Yes,No,Yes,Yes,No,Noise,15,Sometimes,Yes,Never,No,Yes,Sometimes,Sometimes,No
+17,Male,HSC,In-Relationship,City,4,Sometimes,15,Evening,30,No,No,2,YouTube,Sometimes,Entertainment,Yes,No,Yes,No,Sometimes,Daydreams,10,Sometimes,Yes,Sometimes,Sometimes,Sometimes,No,No,Yes
+17,Male,HSC,Single,Suburban,4,Yes,30,Evening,60,Yes,Sometimes,4,YouTube,Rarely,Education,Yes,Yes,No,Yes,Sometimes,Noise,30,Rarely,Not sure,Rarely,Sometimes,Sometimes,Yes,No,Yes
+18,Male,HSC,Single,Suburban,4,Yes,30,Morning,60,No,Sometimes,4,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Yes,Rarely,Sometimes,Yes,Sometimes,No,No
+17,Male,HSC,Single,City,6,Sometimes,30,Late Night,60,No,Sometimes,4,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Yes,Often,Sometimes,Sometimes,Sometimes,Sometimes,Yes
+18,Male,HSC,Single,City,4,Sometimes,15,Evening,15,No,Sometimes,0,YouTube,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Daydreams,15,Often,No,Never,Yes,Yes,No,No,No
+18,Male,HSC,Single,City,6,Sometimes,60,Evening,0,No,Sometimes,2,YouTube,Rarely,Entertainment,Yes,No,Yes,No,No,Daydreams,30,Rarely,No,Never,No,Yes,Sometimes,No,No
+18,Male,HSC,Single,Suburban,6,Sometimes,60,Evening,15,Yes,Yes,2,YouTube,Sometimes,Education,Yes,No,Yes,Yes,No,Daydreams,30,Rarely,Yes,Rarely,No,No,No,No,Yes
+17,Male,HSC,Single,Suburban,1,Yes,30,Late Night,30,No,Yes,2,YouTube,Very Often,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Often,Yes,Sometimes,Sometimes,Yes,No,No,Not sure
+17,Male,HSC,Single,City,6,Yes,30,Evening,30,No,Sometimes,6,Facebook,Very Often,Education,Yes,Sometimes,No,Yes,No,Notifications,30,Sometimes,Yes,Rarely,Sometimes,Yes,Sometimes,No,Not sure
+18,Male,HSC,Single,Suburban,7,Yes,60,Morning,0,Yes,No,0,YouTube,Rarely,Entertainment,Yes,No,Yes,Yes,No,Daydreams,30,Sometimes,Not sure,Rarely,No,Yes,Sometimes,No,Not sure
+18,Male,HSC,Single,Suburban,1,Sometimes,60,Evening,30,No,Yes,6,YouTube,Rarely,Entertainment,Yes,No,No,No,No,Daydreams,30,Rarely,Not sure,Rarely,Yes,No,No,No,Not sure
+18,Male,HSC,Single,City,4,Sometimes,15,Evening,60,Yes,No,2,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Rarely,Not sure,Often,Sometimes,Yes,Yes,Sometimes,Not sure
+18,Male,HSC,Single,City,4,Sometimes,15,Evening,15,Yes,Yes,2,Instagram,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Daydreams,15,Sometimes,Yes,Sometimes,Sometimes,No,Sometimes,No,Not sure
+17,Male,HSC,Single,City,6,Yes,15,Morning,30,No,Sometimes,2,TV,Rarely,Entertainment,Yes,No,Yes,No,Sometimes,Daydreams,30,Rarely,Yes,Never,Sometimes,Sometimes,No,No,No
+18,Male,HSC,Single,City,1,Sometimes,60,Afternoon,30,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,No,Yes,No,No,Daydreams,30,Sometimes,Yes,Often,Yes,Yes,No,No,Yes
+18,Male,HSC,Single,City,4,No,15,Evening,0,No,Sometimes,0,YouTube,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Often,Yes,Rarely,Yes,No,Yes,No,No
+17,Male,HSC,Single,City,4,No,15,Late Night,30,Yes,Yes,6,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,No,Daydreams,10,Often,No,Never,Yes,No,Yes,No,No
+17,Male,HSC,Single,City,6,Yes,10,Morning,30,No,Sometimes,0,Others,Rarely,Education,Yes,No,Yes,No,No,Others,30,Rarely,No,Never,No,Yes,Sometimes,No,No
+16,Male,HSC,Single,City,6,Yes,60,Evening,60,Yes,No,2,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,15,Sometimes,No,Never,No,Yes,Sometimes,No,No
+17,Male,HSC,Single,City,7,Yes,60,Morning,60,Yes,Sometimes,0,YouTube,Never,Education,Yes,No,No,Yes,No,Notifications,30,Often,Yes,Often,Sometimes,Yes,Sometimes,Sometimes,Yes
+16,Male,HSC,In-Relationship,City,6,Sometimes,60,Evening,0,No,Yes,6,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,Sometimes,Daydreams,30,Rarely,Yes,Rarely,Yes,Sometimes,No,No,Yes
+17,Male,HSC,Single,City,2,Yes,60,Late Night,15,No,Yes,6,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,No,No,Notifications,10,Sometimes,Yes,Sometimes,Yes,Yes,Yes,No,Yes
+18,Male,HSC,Single,Suburban,7,Yes,60,Morning,60,Yes,Yes,0,YouTube,Rarely,Entertainment,Yes,No,Yes,Yes,Sometimes,Noise,30,Sometimes,Not sure,Rarely,Sometimes,No,Sometimes,No,No
+17,Male,HSC,Single,Suburban,4,No,10,Morning,15,No,Yes,0,TikTok,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Yes,Notifications,30,Sometimes,Not sure,Often,No,Yes,Sometimes,No,Yes
+18,Male,HSC,Single,City,4,Yes,60,Evening,60,No,Sometimes,4,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Rarely,Not sure,Rarely,Sometimes,Sometimes,No,No,Not sure
+17,Male,HSC,Single,City,6,Yes,60,Evening,60,Yes,No,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,No,Notifications,15,Rarely,Yes,Rarely,Sometimes,Yes,Sometimes,Sometimes,Yes
+17,Male,HSC,Single,City,6,Yes,15,Late Night,30,Yes,Sometimes,2,Facebook,Rarely,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,30,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,No,Yes
+17,Male,HSC,Single,Suburban,4,Yes,15,Evening,15,Yes,Sometimes,4,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,15,Often,Yes,Rarely,Sometimes,Yes,No,No,No
+18,Male,HSC,In-Relationship,City,2,Sometimes,30,Evening,60,No,Yes,6,Facebook,Rarely,Entertainment,Yes,Yes,Yes,Yes,No,Noise,30,Sometimes,Yes,Rarely,No,Yes,Yes,No,Yes
+18,Male,HSC,Single,City,6,Yes,60,Afternoon,60,Yes,Yes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Often,Yes,Often,Yes,No,Yes,Sometimes,No
+17,Male,HSC,Single,Suburban,7,Yes,10,Evening,30,No,Sometimes,6,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Noise,30,Rarely,Not sure,Sometimes,Yes,Sometimes,No,No,Yes
+17,Male,HSC,Single,Suburban,6,Yes,30,Late Night,60,No,Sometimes,4,YouTube,Sometimes,Entertainment,Yes,No,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Rarely,No,Sometimes,Sometimes,No,Not sure
+17,Male,HSC,Single,Suburban,4,Sometimes,30,Late Night,30,No,Sometimes,4,YouTube,Rarely,Education,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Often,Not sure,Sometimes,Sometimes,No,Sometimes,Sometimes,No
+17,Male,HSC,Single,City,6,Yes,60,Afternoon,60,Yes,Sometimes,2,Facebook,Rarely,Entertainment,Yes,No,Yes,No,Yes,Daydreams,30,Sometimes,No,Sometimes,Yes,Yes,No,No,No
+18,Male,HSC,Single,Suburban,2,Yes,60,Evening,30,No,Sometimes,4,YouTube,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Daydreams,30,Often,Yes,Sometimes,No,Yes,No,No,Not sure
+18,Male,HSC,Single,City,6,Yes,60,Evening,0,No,Yes,4,YouTube,Sometimes,Education,Yes,No,Yes,No,No,Daydreams,30,Rarely,No,Never,No,Yes,No,No,No
+18,Male,HSC,Single,City,4,No,60,Morning,60,No,Yes,2,Instagram,Sometimes,Entertainment,Yes,No,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Rarely,No,Yes,No,No,Not sure
+18,Male,HSC,Single,City,4,No,30,Late Night,30,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,No,Yes,Yes,Sometimes,Daydreams,30,Often,Yes,Often,Yes,No,No,No,Not sure
+17,Male,HSC,Single,City,6,Sometimes,10,Morning,15,Yes,Sometimes,2,YouTube,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Rarely,Yes,Never,Yes,Yes,Yes,No,Yes
+18,Male,HSC,Single,City,4,Yes,30,Morning,60,No,No,0,Instagram,Sometimes,Entertainment,Yes,No,Yes,No,No,Noise,30,Sometimes,No,Never,No,Yes,Sometimes,No,No
+18,Male,HSC,Single,City,4,Sometimes,15,Late Night,15,Yes,Yes,4,TikTok,Never,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,30,Often,No,Rarely,Sometimes,No,No,No,Not sure
+18,Male,HSC,Single,City,4,Yes,30,Morning,0,No,Sometimes,0,YouTube,Never,Entertainment,Yes,Sometimes,Yes,Yes,No,Notifications,30,Rarely,Yes,Never,Yes,Yes,No,No,Yes
+17,Female,HSC,Single,City,6,Yes,30,Evening,60,No,Sometimes,0,Facebook,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Daydreams,30,Rarely,Not sure,Sometimes,Yes,Yes,No,Sometimes,Yes
+18,Male,HSC,Single,City,7,Sometimes,30,Morning,30,No,Sometimes,4,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Yes,Often,Yes,Yes,No,No,Not sure
+18,Male,HSC,Single,City,4,Yes,60,Morning,60,No,Sometimes,2,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,No,Yes,Noise,15,Rarely,Yes,Never,No,Yes,Yes,No,Yes
+18,Male,HSC,Single,City,7,No,60,Morning,0,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,15,Often,Yes,Often,No,Sometimes,Yes,Sometimes,No
+17,Male,HSC,Single,City,4,Sometimes,30,Morning,15,Yes,Yes,4,YouTube,Very Often,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,10,Sometimes,Yes,Sometimes,Yes,Yes,No,No,Yes
+18,Male,HSC,In-Relationship,City,6,Sometimes,60,Evening,15,Yes,Sometimes,0,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Rarely,No,Sometimes,No,Yes,No,No,No
+17,Male,HSC,Single,City,1,Sometimes,60,Evening,60,No,Yes,6,Instagram,Rarely,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,30,Often,No,Often,No,No,No,No,No
+18,Male,HSC,Single,City,6,Sometimes,60,Evening,0,No,Sometimes,2,YouTube,Never,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Never,No,Yes,No,No,No
+18,Male,HSC,Single,City,4,Yes,30,Evening,30,Yes,Yes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Yes,Noise,30,Sometimes,Yes,Rarely,Yes,Yes,No,No,No
+18,Male,HSC,Single,City,2,Yes,30,Late Night,30,No,Sometimes,8,Facebook,Very Often,Entertainment,Yes,Yes,No,Yes,Yes,Daydreams,30,Rarely,No,Often,Sometimes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,10,Morning,30,No,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Notifications,10,Sometimes,Not sure,Sometimes,Yes,Sometimes,No,No,Yes
+17,Male,HSC,Single,Suburban,4,Sometimes,30,Evening,30,No,Sometimes,4,Facebook,Very Often,Entertainment,Yes,Sometimes,Yes,No,No,Notifications,30,Sometimes,Yes,Rarely,Sometimes,Yes,Sometimes,No,Yes
+18,Male,HSC,In-Relationship,City,1,Yes,30,Evening,30,No,Yes,4,Instagram,Very Often,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Sometimes,Not sure,Sometimes,No,Yes,Sometimes,No,No
+18,Male,HSC,Single,Suburban,2,No,10,Evening,30,No,Yes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,No,Daydreams,30,Sometimes,Yes,Often,Yes,No,No,No,Yes
+19,Male,HSC,Single,City,6,Yes,30,Morning,60,Yes,Yes,4,YouTube,Rarely,Entertainment,Yes,No,Yes,Yes,No,Noise,15,Rarely,No,Rarely,No,Yes,Sometimes,No,No
+18,Male,HSC,Single,City,6,Yes,30,Evening,60,No,Sometimes,2,TV,Never,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Rarely,Not sure,Never,No,Yes,Sometimes,No,No
+17,Male,HSC,Single,City,4,Yes,10,Morning,30,Yes,No,2,YouTube,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Noise,30,Sometimes,Not sure,Rarely,Sometimes,Sometimes,No,No,Not sure
+17,Male,HSC,Single,Suburban,6,Sometimes,60,Evening,0,No,Yes,4,Instagram,Rarely,Education,Yes,Yes,No,Yes,No,Notifications,30,Sometimes,Yes,Rarely,No,Sometimes,No,No,No
+18,Male,HSC,Single,City,2,Sometimes,15,Morning,15,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Yes,No,No,Yes,Notifications,10,Often,Yes,Never,Yes,Yes,No,No,Not sure
+17,Male,HSC,Single,Suburban,6,Yes,60,Evening,0,No,Sometimes,2,Facebook,Rarely,Entertainment,Yes,No,Yes,Yes,Sometimes,Daydreams,30,Rarely,Not sure,Rarely,No,No,Sometimes,No,Yes
+18,Male,HSC,Single,City,1,Yes,30,Evening,60,No,Yes,4,Instagram,Very Often,Entertainment,Yes,Sometimes,Yes,No,Sometimes,Noise,30,Sometimes,Not sure,Sometimes,Sometimes,Yes,No,No,Not sure
+18,Male,HSC,In-Relationship,City,4,Yes,60,Morning,60,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Not sure,Sometimes,Sometimes,Yes,Sometimes,No,Not sure
+17,Female,HSC,Single,City,4,Yes,60,Evening,15,Yes,Sometimes,2,Instagram,Very Often,Entertainment,Yes,Yes,Yes,Yes,No,Notifications,10,Rarely,Yes,Rarely,Sometimes,Yes,Yes,Sometimes,Not sure
+18,Male,HSC,Single,City,7,Yes,30,Late Night,60,No,Sometimes,2,Instagram,Rarely,Entertainment,Yes,Sometimes,No,No,Sometimes,Noise,30,Sometimes,Not sure,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes
+18,Male,HSC,Single,City,7,Yes,15,Evening,0,Yes,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Sometimes,Not sure,Never,Sometimes,Yes,Yes,Yes,Not sure
+19,Female,HSC,Single,City,6,No,30,Morning,15,Yes,Yes,4,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Noise,3,Sometimes,Yes,Sometimes,Sometimes,Yes,No,No,Yes
+17,Male,HSC,Single,Suburban,2,Sometimes,30,Late Night,30,No,Sometimes,6,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,No,Noise,15,Often,Yes,Sometimes,No,Sometimes,Sometimes,No,Not sure
+17,Male,HSC,Single,Suburban,4,Yes,30,Evening,60,No,Sometimes,2,YouTube,Rarely,Education,Yes,No,Yes,Yes,No,Others,30,Rarely,No,Never,Yes,Sometimes,Sometimes,No,No
+18,Female,HSC,Single,City,2,Sometimes,5,Evening,15,No,Yes,4,Instagram,Very Often,Entertainment,Yes,Yes,Yes,No,Sometimes,Noise,10,Often,Yes,Never,Yes,Yes,Yes,Yes,Not sure
+18,Female,HSC,Single,Suburban,4,Sometimes,15,Evening,60,No,Sometimes,4,Facebook,Rarely,Entertainment,Yes,Yes,Yes,No,No,Daydreams,30,Sometimes,Yes,Often,No,Sometimes,No,No,No
+17,Female,HSC,In-Relationship,City,4,Sometimes,15,Evening,30,No,Sometimes,0,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Noise,15,Sometimes,No,Sometimes,No,No,No,No,No
+16,Male,HSC,Single,City,6,Sometimes,30,Evening,30,No,Sometimes,0,Instagram,Never,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Not sure,Never,Sometimes,No,Yes,No,Not sure
+17,Female,HSC,Single,City,7,Sometimes,5,Late Night,0,No,Yes,6,Others,Rarely,Education,Yes,No,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Often,Yes,Sometimes,No,Yes,Not sure
+18,Female,HSC,Single,City,6,Yes,15,Evening,15,No,No,4,Facebook,Very Often,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Noise,15,Sometimes,No,Never,Yes,Yes,Sometimes,Sometimes,No
+17,Female,HSC,Single,City,4,Sometimes,60,Evening,0,No,Sometimes,2,TV,Sometimes,Entertainment,Yes,Sometimes,No,No,Yes,Daydreams,30,Sometimes,Not sure,Sometimes,Sometimes,Yes,Sometimes,No,No
+17,Male,HSC,Single,City,4,Sometimes,60,Evening,0,No,Yes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,No,Yes,Daydreams,30,Sometimes,Not sure,Sometimes,No,No,Sometimes,No,No
+19,Male,HSC,Single,City,4,Sometimes,15,Evening,30,No,Yes,2,YouTube,Very Often,Education,Yes,Sometimes,No,Yes,Sometimes,Daydreams,3,Often,Not sure,Rarely,Yes,Yes,No,No,Not sure
+18,Male,HSC,Single,City,4,Sometimes,15,Late Night,0,No,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,No,Yes,Others,30,Sometimes,Yes,Sometimes,Yes,No,No,No,No
+18,Male,HSC,Single,City,2,Sometimes,30,Evening,15,No,Sometimes,2,Facebook,Rarely,Education,Yes,Sometimes,Yes,No,Sometimes,Daydreams,15,Sometimes,Not sure,Sometimes,Sometimes,Sometimes,No,No,Not sure
+17,Male,HSC,Single,Suburban,7,Yes,30,Evening,30,Yes,Yes,2,Facebook,Very Often,Entertainment,Yes,Yes,Yes,Yes,Yes,Notifications,30,Sometimes,Yes,Sometimes,No,Yes,No,No,Yes
+17,Female,HSC,Single,Suburban,1,Sometimes,5,Evening,15,No,Yes,8,YouTube,Never,Entertainment,Yes,Yes,No,No,Yes,Notifications,3,Often,Yes,Often,Sometimes,Yes,No,No,Not sure
+17,Female,HSC,Single,City,4,Yes,15,Late Night,0,No,Sometimes,0,Facebook,Rarely,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Rarely,Sometimes,Yes,No,No,No
+17,Female,HSC,Single,Suburban,4,Yes,15,Morning,0,No,Sometimes,2,Facebook,Rarely,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Sometimes,No,Yes,No,No,No
+18,Female,HSC,Single,City,6,Yes,60,Evening,60,Yes,Yes,0,Instagram,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Often,Yes,Sometimes,Sometimes,No,No,Sometimes,No
+17,Female,HSC,Single,City,2,Sometimes,30,Late Night,15,No,Sometimes,4,Facebook,Rarely,Entertainment,Yes,Yes,No,Yes,Yes,Others,10,Often,Yes,Often,Yes,No,No,Yes,Yes
+17,Female,HSC,Single,City,6,Yes,30,Evening,15,No,Yes,2,TV,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Daydreams,10,Often,Yes,Often,Yes,No,No,No,Not sure
+17,Female,HSC,Single,City,6,Sometimes,30,Evening,15,No,Yes,2,TV,Never,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Daydreams,10,Often,Yes,Often,Yes,Yes,No,No,Not sure
+17,Other,HSC,Single,City,6,Yes,10,Evening,15,Yes,Yes,2,TV,Never,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Noise,15,Sometimes,Yes,Often,No,No,No,No,Not sure
+17,Female,HSC,Single,City,6,Yes,30,Morning,60,Yes,Yes,0,TV,Rarely,Entertainment,Yes,Sometimes,Yes,No,Yes,Daydreams,30,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,No,Yes
+17,Female,HSC,Single,City,6,Yes,30,Late Night,30,No,Yes,4,Instagram,Very Often,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,15,Often,Not sure,Sometimes,Yes,Sometimes,Sometimes,No,No
+17,Female,HSC,Single,City,4,Yes,15,Evening,60,Yes,Sometimes,2,Facebook,Never,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Rarely,Not sure,Never,Sometimes,Yes,No,No,Not sure
+17,Female,HSC,Single,City,4,Yes,15,Evening,60,No,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Often,Yes,Sometimes,Sometimes,Sometimes,Sometimes,No,No
+18,Female,HSC,Single,City,4,Sometimes,60,Late Night,30,Yes,Yes,4,Instagram,Rarely,Entertainment,Yes,No,Yes,Yes,Yes,Noise,30,Often,Yes,Rarely,Yes,No,Sometimes,Sometimes,Yes
+18,Female,HSC,Single,City,4,Sometimes,60,Evening,30,Yes,Yes,4,Instagram,Rarely,Entertainment,Yes,No,No,Yes,Yes,Noise,30,Often,Yes,Rarely,Yes,No,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,60,Evening,30,No,Yes,2,YouTube,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Rarely,Yes,No,Sometimes,No,Not sure
+17,Female,HSC,Single,City,7,Yes,30,Evening,0,Yes,Sometimes,0,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,3,Sometimes,Not sure,Rarely,No,No,No,No,Not sure
+18,Female,HSC,Single,City,7,Yes,10,Evening,0,Yes,Sometimes,0,Instagram,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Sometimes,Not sure,Rarely,No,No,Sometimes,No,No
+17,Female,HSC,Single,City,7,Yes,10,Late Night,0,Yes,Sometimes,0,Instagram,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Rarely,Not sure,Rarely,Sometimes,No,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,6,Yes,30,Morning,30,Yes,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Daydreams,15,Sometimes,Not sure,Rarely,Sometimes,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,60,Morning,30,No,Yes,0,YouTube,Rarely,Education,Yes,No,Yes,Yes,Sometimes,Daydreams,30,Often,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes
+17,Female,HSC,Single,City,7,Yes,10,Morning,15,Yes,No,0,Instagram,Rarely,Education,Yes,No,Yes,Yes,Yes,Noise,30,Often,Not sure,Often,Sometimes,Sometimes,Yes,No,Not sure
+17,Female,HSC,Single,City,6,Yes,60,Evening,60,Yes,Yes,4,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes
+16,Female,HSC,Single,City,6,Sometimes,15,Late Night,30,No,Yes,2,Facebook,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Sometimes,Sometimes,Yes,No,No,Yes
+16,Female,HSC,Single,City,6,Yes,30,Late Night,30,No,Sometimes,2,YouTube,Rarely,Education,Yes,Sometimes,Yes,Yes,Sometimes,Noise,15,Sometimes,Yes,Often,Sometimes,No,Sometimes,Sometimes,Yes
+18,Female,HSC,Single,Suburban,4,Yes,15,Late Night,0,No,Sometimes,2,YouTube,Rarely,Education,Yes,No,Yes,Yes,No,Daydreams,30,Sometimes,No,Never,No,Yes,Sometimes,Sometimes,No
+17,Female,HSC,Single,City,6,Yes,30,Evening,60,No,Sometimes,4,YouTube,Never,Entertainment,Yes,Yes,No,Yes,No,Daydreams,30,Sometimes,Yes,Often,Sometimes,Yes,No,No,Not sure
+17,Female,HSC,In-Relationship,City,6,Sometimes,60,Evening,0,Yes,Yes,0,Others,Rarely,Education,Yes,No,Yes,Yes,Yes,Daydreams,30,Often,Yes,Sometimes,Yes,No,No,No,No
+17,Female,HSC,Single,City,6,Sometimes,15,Evening,0,Yes,Sometimes,4,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Yes,Others,30,Sometimes,Yes,Often,Sometimes,Yes,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,60,Late Night,60,Yes,Sometimes,2,Facebook,Rarely,Education,Yes,Sometimes,Yes,No,No,Daydreams,30,Sometimes,Not sure,Rarely,No,Sometimes,No,No,Not sure
+17,Female,HSC,Single,City,2,Sometimes,15,Late Night,0,Yes,Sometimes,2,TV,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Noise,30,Often,Yes,Sometimes,No,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,30,Late Night,60,No,Yes,4,YouTube,Very Often,Entertainment,Yes,Sometimes,No,No,Yes,Noise,30,Often,Yes,Often,Yes,No,Sometimes,No,Yes
+19,Female,HSC,Single,City,4,Yes,30,Late Night,30,Yes,Yes,2,Instagram,Sometimes,Education,Yes,Yes,Yes,Yes,Sometimes,Noise,15,Often,Not sure,Often,No,Yes,Sometimes,Sometimes,Yes
+17,Female,HSC,Single,Suburban,4,Yes,60,Evening,60,Yes,Sometimes,0,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Sometimes,Not sure,Sometimes,Sometimes,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,60,Evening,30,No,Yes,2,Instagram,Sometimes,Education,Yes,Yes,Yes,Yes,Yes,Notifications,30,Sometimes,Yes,Often,Yes,Sometimes,Sometimes,No,Not sure
+17,Female,HSC,Single,City,4,Sometimes,30,Morning,60,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,Yes,Sometimes,Sometimes,Daydreams,30,Often,Yes,Often,Sometimes,Sometimes,Sometimes,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,30,Late Night,60,Yes,Sometimes,2,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Often,Yes,Sometimes,Yes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,30,Evening,60,No,Sometimes,2,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Noise,30,Sometimes,Yes,Sometimes,Sometimes,Yes,No,No,Not sure
+17,Female,HSC,Single,City,4,Sometimes,30,Evening,60,No,Sometimes,4,Instagram,Very Often,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Often,Yes,Often,Yes,No,No,No,Yes
+16,Female,HSC,Single,City,7,Yes,60,Morning,0,No,No,0,Instagram,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Noise,15,Sometimes,Not sure,Never,No,No,No,No,Not sure
+17,Female,HSC,Single,City,6,Yes,30,Late Night,0,No,Yes,2,Facebook,Rarely,Education,Yes,No,Yes,Yes,No,Notifications,10,Sometimes,No,Often,Sometimes,No,No,No,Yes
+17,Female,HSC,Single,City,6,Yes,60,Morning,0,No,Sometimes,4,Facebook,Never,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,30,Rarely,Not sure,Rarely,Sometimes,Yes,Yes,No,Yes
+17,Female,HSC,Single,City,6,Yes,60,Evening,0,No,Sometimes,4,YouTube,Never,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,30,Rarely,Not sure,Rarely,No,Yes,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,6,Yes,60,Morning,60,Yes,Sometimes,0,YouTube,Never,Education,Yes,No,Yes,Yes,Sometimes,Noise,30,Rarely,No,Never,Sometimes,Yes,Yes,No,Yes
+18,Female,HSC,Single,City,1,No,2,Evening,15,No,Yes,8,YouTube,Very Often,Entertainment,Yes,Yes,No,No,Yes,Daydreams,3,Often,Yes,Often,Yes,Sometimes,No,No,No
+17,Female,HSC,Single,City,6,Sometimes,15,Evening,15,No,Yes,2,Facebook,Rarely,Entertainment,Yes,Sometimes,No,Yes,Yes,Daydreams,15,Often,Yes,Often,Sometimes,Sometimes,Sometimes,No,Not sure
+18,Female,HSC,Single,City,1,Yes,5,Morning,0,Yes,Sometimes,6,YouTube,Very Often,Education,Yes,Sometimes,Yes,No,Sometimes,Daydreams,30,Often,Yes,Often,Sometimes,Yes,Yes,Sometimes,No
+17,Female,HSC,Single,City,1,Sometimes,2,Morning,15,No,Yes,8,YouTube,Very Often,Entertainment,Yes,Yes,No,No,Sometimes,Noise,3,Often,Yes,Often,Yes,Sometimes,No,No,No
+17,Female,HSC,Single,City,6,Yes,30,Evening,60,Yes,Sometimes,0,Instagram,Never,Entertainment,Yes,Sometimes,Yes,No,Sometimes,Daydreams,30,Rarely,Not sure,Sometimes,No,Yes,No,No,Not sure
+17,Female,HSC,Single,City,6,Yes,5,Evening,30,No,Yes,2,Facebook,Very Often,Entertainment,Yes,Sometimes,No,Yes,Yes,Daydreams,30,Often,Yes,Sometimes,Yes,No,No,Yes,Yes
+17,Female,HSC,Single,Suburban,6,Yes,10,Evening,15,Yes,No,0,Facebook,Never,Education,Yes,No,No,No,No,Noise,15,Rarely,No,Never,No,Yes,No,No,No
+17,Female,HSC,Single,City,2,Sometimes,5,Late Night,30,No,Sometimes,2,YouTube,Never,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,15,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,No,Not sure
+17,Female,HSC,Single,Suburban,4,Yes,15,Late Night,30,No,Sometimes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Sometimes,Sometimes,No,Sometimes,No,Not sure
+17,Female,HSC,Single,Suburban,6,Yes,10,Evening,30,Yes,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Noise,15,Rarely,Not sure,Never,No,Yes,Sometimes,No,Not sure
+19,Female,HSC,Single,Suburban,6,Sometimes,15,Afternoon,60,Yes,Yes,4,Instagram,Never,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,15,Often,Not sure,Often,Yes,No,No,No,Not sure
+18,Female,HSC,Single,City,6,Yes,30,Afternoon,60,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Sometimes,Not sure,Often,No,Yes,No,No,Not sure
+16,Female,HSC,Single,Suburban,6,Sometimes,15,Late Night,30,No,Yes,2,TikTok,Very Often,Entertainment,Yes,Yes,Yes,No,Yes,Noise,15,Often,Yes,Often,Sometimes,Yes,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,5,Evening,60,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,Yes,No,Yes,Sometimes,Daydreams,3,Sometimes,Yes,Often,Yes,Yes,No,No,Yes
+18,Female,HSC,Single,City,6,Yes,30,Morning,30,Yes,Sometimes,2,Facebook,Sometimes,Education,Yes,No,Yes,Yes,No,Noise,10,Often,No,Never,No,Sometimes,Sometimes,Sometimes,No
+18,Female,HSC,Single,City,6,Yes,30,Late Night,15,Yes,Yes,2,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Sometimes,Yes,No,No,No,Not sure
+17,Female,HSC,Single,City,6,Yes,15,Morning,60,No,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Sometimes,Sometimes,Yes,No,No,No
+17,Female,HSC,Single,City,4,Sometimes,30,Late Night,30,No,Yes,2,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Others,15,Rarely,Yes,Never,Yes,No,No,No,Not sure
+17,Female,HSC,Single,City,4,Yes,60,Afternoon,30,Yes,No,2,Instagram,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Rarely,No,Rarely,Yes,Yes,Yes,Yes,No
+17,Female,HSC,Single,City,6,Yes,60,Late Night,0,No,No,0,Others,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Never,No,Never,Yes,Yes,Sometimes,Yes,Yes
+17,Female,HSC,Single,City,4,Sometimes,30,Late Night,30,Yes,Yes,2,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,Yes,Notifications,15,Often,Yes,Sometimes,Sometimes,Yes,Sometimes,No,Not sure
+18,Female,HSC,Single,Village (Rural),4,Sometimes,30,Evening,30,No,Yes,4,TikTok,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Daydreams,30,Sometimes,Yes,Sometimes,Yes,Yes,No,No,Yes
+17,Female,HSC,Single,City,2,Sometimes,30,Evening,15,Yes,Sometimes,4,Others,Sometimes,Entertainment,Yes,No,No,Yes,No,Notifications,30,Often,Not sure,Rarely,Sometimes,No,No,No,Yes
+17,Female,HSC,Single,Suburban,6,Yes,10,Evening,0,No,Sometimes,0,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,No,Daydreams,30,Sometimes,Not sure,Sometimes,Yes,Yes,No,No,No
+17,Other,HSC,Single,City,6,Yes,2,Late Night,0,Yes,Sometimes,0,YouTube,Rarely,Education,Yes,No,Yes,Yes,Yes,Noise,15,Rarely,Not sure,Never,No,Yes,No,No,Not sure
+16,Female,HSC,Single,City,6,Yes,15,Evening,30,Yes,No,0,Facebook,Very Often,Education,Yes,Sometimes,No,Yes,No,Noise,30,Sometimes,Not sure,Rarely,No,Yes,Sometimes,No,Yes
+18,Female,HSC,Single,City,1,Sometimes,10,Evening,30,Yes,Sometimes,2,Instagram,Sometimes,Education,Yes,No,Yes,Yes,Sometimes,Daydreams,30,Rarely,Not sure,Never,No,Yes,Sometimes,No,Not sure
+18,Female,HSC,Single,City,6,Yes,60,Evening,0,No,Sometimes,6,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Rarely,Yes,Sometimes,Yes,No,No,No,Not sure
+17,Female,HSC,Single,City,4,No,15,Late Night,15,No,Sometimes,8,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,No,Notifications,10,Often,Yes,Sometimes,Yes,No,No,No,Yes
+18,Female,HSC,In-Relationship,City,4,Sometimes,30,Late Night,30,No,Yes,2,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,Sometimes,Daydreams,30,Often,Yes,Sometimes,Yes,No,No,No,Not sure
+18,Female,HSC,Single,City,4,Sometimes,30,Late Night,60,No,Sometimes,0,TV,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Yes,Sometimes,Sometimes,Yes,No,No,No
+18,Female,HSC,Single,Suburban,6,Yes,30,Morning,15,Yes,Sometimes,0,TV,Never,Education,Yes,No,Yes,No,Yes,Notifications,30,Sometimes,Not sure,Rarely,Sometimes,Sometimes,No,No,Yes
+18,Female,HSC,Single,City,2,Sometimes,10,Morning,0,No,Sometimes,6,Instagram,Very Often,Entertainment,Yes,Yes,Yes,Yes,No,Noise,30,Rarely,Yes,Sometimes,No,Yes,No,No,Not sure
+17,Female,HSC,Single,City,4,Yes,15,Evening,30,No,Sometimes,2,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,No,Notifications,30,Sometimes,Not sure,Never,Sometimes,Yes,No,No,Yes
+17,Female,HSC,Single,City,4,Sometimes,30,Late Night,30,No,Sometimes,2,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,No,Yes,Noise,10,Sometimes,Yes,Sometimes,Sometimes,Sometimes,No,No,No
+17,Female,HSC,Single,City,7,Yes,60,Morning,0,Yes,Yes,0,Others,Never,Education,Yes,No,Yes,Yes,No,Daydreams,30,Often,No,Never,No,Yes,Yes,Yes,Yes
+18,Female,HSC,Single,City,7,Sometimes,60,Late Night,0,Yes,Yes,2,YouTube,Rarely,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Rarely,Not sure,Often,No,Sometimes,No,No,No
+18,Female,HSC,Single,City,6,Sometimes,15,Late Night,30,Yes,Yes,4,YouTube,Very Often,Entertainment,Yes,Yes,No,No,Sometimes,Daydreams,15,Often,Not sure,Sometimes,Sometimes,No,Sometimes,No,Not sure
+18,Female,HSC,In-Relationship,City,6,Sometimes,5,Late Night,60,No,Yes,2,Instagram,Sometimes,Entertainment,Yes,Yes,No,No,Sometimes,Daydreams,10,Sometimes,Yes,Often,Yes,No,No,No,No
+19,Female,HSC,Single,City,7,Sometimes,30,Late Night,60,No,Yes,4,Instagram,Very Often,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,3,Sometimes,Yes,Often,Yes,No,No,No,No
+17,Female,HSC,Single,City,2,No,5,Late Night,15,Yes,Sometimes,6,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Daydreams,3,Often,Yes,Often,No,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,30,Morning,30,No,Sometimes,2,YouTube,Rarely,Entertainment,Yes,Yes,No,No,No,Noise,3,Sometimes,Yes,Rarely,Yes,Yes,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,30,Late Night,30,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Daydreams,15,Often,Not sure,Rarely,Sometimes,Yes,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,1,No,5,Late Night,15,No,Yes,8,Facebook,Very Often,Entertainment,Yes,Yes,No,No,Yes,Daydreams,3,Often,Yes,Often,Yes,No,No,No,No
+17,Female,HSC,Single,City,4,Yes,15,Morning,30,No,No,0,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Noise,30,Sometimes,No,Sometimes,Sometimes,Yes,No,No,No
+17,Female,HSC,Single,City,4,Sometimes,30,Morning,30,No,Sometimes,4,Facebook,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Notifications,30,Often,Yes,Often,Yes,No,Sometimes,No,Yes
+17,Female,HSC,Single,City,6,Yes,60,Morning,0,No,Sometimes,2,YouTube,Never,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Sometimes,Yes,Often,No,No,Sometimes,Sometimes,Yes
+17,Female,HSC,Single,City,2,Sometimes,60,Morning,30,No,Yes,4,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Often,Yes,Yes,No,No,No
+18,Other,HSC,Single,City,2,Yes,30,Morning,30,No,Sometimes,0,TV,Rarely,Entertainment,Yes,No,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Often,Sometimes,No,No,No,No
+17,Female,HSC,Single,City,4,Yes,10,Late Night,60,No,Sometimes,4,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,No,No
+18,Female,HSC,Single,City,2,Sometimes,10,Late Night,30,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Often,Yes,No,No,No,No
+16,Female,HSC,Single,Suburban,6,Yes,10,Morning,60,Yes,Yes,2,Facebook,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Noise,15,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,7,Yes,15,Morning,0,Yes,Sometimes,2,YouTube,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Sometimes,No,Sometimes,Sometimes,Yes,Sometimes,Sometimes,No
+17,Female,HSC,Single,Suburban,4,Sometimes,10,Evening,60,No,Sometimes,4,Instagram,Rarely,Entertainment,Yes,Yes,Yes,Yes,No,Daydreams,30,Never,Not sure,Sometimes,No,Yes,No,No,No
+17,Female,HSC,Single,Suburban,4,Yes,30,Evening,0,No,Sometimes,6,Instagram,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Yes,Rarely,Yes,Yes,No,No,Not sure
+18,Female,HSC,Single,City,6,Yes,30,Evening,15,Yes,Yes,2,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Others,30,Sometimes,Not sure,Rarely,No,Yes,Sometimes,Sometimes,No
+17,Female,HSC,Single,City,6,Yes,30,Evening,30,Yes,No,4,YouTube,Rarely,Entertainment,Yes,Sometimes,No,Yes,No,Noise,15,Rarely,No,Never,No,No,No,No,No
+18,Female,HSC,Single,City,6,Yes,30,Morning,60,Yes,Yes,2,Facebook,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Others,15,Sometimes,Yes,Sometimes,No,No,No,No,No
+17,Female,HSC,Single,Suburban,7,Sometimes,60,Late Night,0,Yes,Sometimes,2,TikTok,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,No,Sometimes,Sometimes,Sometimes,No,Sometimes,Not sure
+17,Female,HSC,Single,City,6,Yes,15,Late Night,0,Yes,Sometimes,2,Instagram,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Rarely,Yes,Never,No,Sometimes,No,Yes,Yes
+17,Female,HSC,Single,City,6,Sometimes,30,Late Night,30,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,No,Sometimes,Notifications,3,Often,Yes,Sometimes,Sometimes,No,No,No,No
+18,Female,SSC,Single,City,4,Yes,60,Morning,0,Yes,No,2,YouTube,Never,Entertainment,Yes,Sometimes,Yes,Yes,No,Noise,30,Rarely,No,Never,No,Yes,Yes,Yes,Not sure
+17,Female,HSC,Single,City,7,No,30,Late Night,60,No,Sometimes,0,YouTube,Never,Entertainment,Yes,Yes,No,No,Sometimes,Daydreams,30,Often,Yes,Often,Yes,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,30,Morning,0,No,Sometimes,0,TV,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Daydreams,30,Often,Yes,Rarely,Yes,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,10,Evening,60,Yes,Sometimes,4,YouTube,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,15,Sometimes,Not sure,Never,No,Yes,No,No,Not sure
+18,Female,HSC,Single,City,4,Yes,30,Late Night,15,No,Sometimes,0,Instagram,Sometimes,Education,Yes,Sometimes,Yes,Yes,Yes,Noise,30,Sometimes,Not sure,Never,No,Yes,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,4,Yes,15,Evening,30,Yes,Sometimes,4,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,15,Sometimes,Not sure,Sometimes,No,No,No,No,No
+18,Female,HSC,Single,City,4,Yes,30,Evening,30,Yes,Sometimes,4,YouTube,Sometimes,Entertainment,Yes,No,No,No,No,Daydreams,15,Sometimes,Not sure,Sometimes,No,No,No,No,Yes
+16,Female,HSC,In-Relationship,City,6,Sometimes,60,Late Night,60,No,Yes,6,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,Sometimes,Sometimes,Daydreams,30,Rarely,Yes,Often,No,Yes,No,No,No
+17,Female,HSC,Single,City,7,Yes,60,Morning,60,Yes,Sometimes,0,YouTube,Never,Education,Yes,No,Yes,Yes,No,Notifications,30,Sometimes,No,Sometimes,Yes,Yes,No,No,No
+17,Female,HSC,Single,City,4,Sometimes,5,Morning,0,No,Sometimes,0,Instagram,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Noise,30,Often,Yes,Sometimes,No,Sometimes,No,No,No
+17,Female,HSC,Single,City,7,Yes,60,Morning,0,Yes,Sometimes,0,YouTube,Sometimes,Education,Yes,Sometimes,No,Yes,No,Noise,30,Often,No,Rarely,Yes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,60,Late Night,60,No,Sometimes,2,Instagram,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Noise,30,Often,Yes,Often,No,No,No,No,Not sure
+17,Female,HSC,Single,City,4,Sometimes,60,Evening,60,No,Sometimes,4,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Noise,15,Sometimes,Yes,Sometimes,Yes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,4,Sometimes,60,Morning,60,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Sometimes,Yes,Sometimes,No,Yes,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,15,Evening,0,No,Yes,2,Instagram,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Often,Yes,Sometimes,Sometimes,Sometimes,Sometimes,No,Not sure
+19,Female,HSC,Single,Suburban,4,Yes,30,Evening,15,Yes,Yes,2,Facebook,Sometimes,Entertainment,Yes,Yes,No,Yes,No,Notifications,30,Sometimes,Yes,Never,Yes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,6,Yes,30,Evening,0,No,Yes,2,TV,Sometimes,Education,Yes,Sometimes,No,Yes,Sometimes,Noise,15,Sometimes,Not sure,Never,Sometimes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,6,Yes,30,Late Night,60,Yes,Sometimes,2,YouTube,Sometimes,Entertainment,Yes,No,Yes,Yes,No,Daydreams,30,Rarely,No,Sometimes,Yes,Yes,Sometimes,No,Yes
+17,Female,HSC,Single,City,6,Yes,30,Evening,0,Yes,No,2,TV,Sometimes,Education,Yes,Sometimes,Yes,No,No,Daydreams,30,Sometimes,Not sure,Rarely,No,Sometimes,No,Yes,Not sure
+17,Female,HSC,Single,Suburban,4,Yes,60,Morning,30,No,Sometimes,2,Instagram,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,No,Noise,30,Sometimes,Yes,Rarely,No,Sometimes,Sometimes,No,Not sure
+17,Female,HSC,Single,City,7,Sometimes,15,Evening,0,Yes,Yes,0,Facebook,Never,Education,Yes,No,Yes,Yes,Sometimes,Noise,15,Sometimes,Not sure,Rarely,Sometimes,Sometimes,No,No,Yes
+18,Female,HSC,Single,City,6,Yes,60,Morning,30,No,No,2,Instagram,Rarely,Education,Yes,No,Yes,Yes,No,Noise,30,Sometimes,No,Sometimes,No,Sometimes,Sometimes,No,No
+17,Female,HSC,Single,City,4,Yes,30,Morning,15,No,No,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,15,Often,Yes,Sometimes,Sometimes,Yes,Sometimes,No,Not sure
+18,Male,HSC,Single,City,2,No,10,Evening,15,No,Yes,6,TikTok,Sometimes,Entertainment,Yes,Yes,No,No,Yes,Others,15,Often,Yes,Often,Yes,Yes,No,No,No
+19,Female,HSC,Single,Suburban,4,Sometimes,10,Evening,60,No,Yes,4,Instagram,Very Often,Entertainment,Yes,Yes,No,Yes,Yes,Notifications,15,Sometimes,Yes,Often,Sometimes,Sometimes,No,No,Yes
+19,Male,HSC,Single,City,2,Yes,15,Afternoon,30,No,Sometimes,4,Instagram,Rarely,Entertainment,Yes,Yes,No,No,No,Daydreams,10,Often,Yes,Sometimes,No,Sometimes,Sometimes,No,Yes
+18,Male,HSC,Single,City,6,Yes,30,Morning,30,Yes,Sometimes,4,Instagram,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Often,Yes,Rarely,Yes,Yes,No,No,No
+20,Male,HSC,Single,City,2,Sometimes,10,Morning,15,Yes,Yes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Noise,15,Sometimes,Yes,Rarely,Sometimes,Sometimes,Sometimes,No,No
+18,Male,HSC,Single,City,4,Yes,10,Late Night,0,Yes,Sometimes,4,Instagram,Very Often,Entertainment,Yes,Yes,Yes,No,Sometimes,Notifications,10,Rarely,Yes,Never,Yes,No,No,No,Yes
+19,Male,HSC,Single,City,4,Sometimes,10,Late Night,30,Yes,Yes,2,Instagram,Rarely,Education,Yes,Sometimes,Yes,No,Sometimes,Daydreams,15,Rarely,Not sure,Sometimes,Sometimes,Yes,Sometimes,No,No
+18,Male,HSC,Single,City,2,Yes,15,Evening,30,No,Yes,4,Facebook,Very Often,Entertainment,Yes,Yes,Yes,Yes,Yes,Notifications,30,Sometimes,Not sure,Often,Sometimes,Sometimes,Sometimes,No,Not sure
+17,Male,HSC,Single,City,4,Sometimes,10,Morning,0,Yes,Sometimes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,No,Sometimes,Notifications,30,Sometimes,No,Often,No,Yes,Yes,Yes,Yes
+18,Male,HSC,In-Relationship,City,1,Sometimes,30,Late Night,15,No,Yes,6,Facebook,Very Often,Entertainment,Yes,Yes,Yes,Yes,No,Daydreams,30,Often,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not sure
+17,Male,HSC,Single,City,2,Yes,15,Evening,15,No,Yes,4,YouTube,Very Often,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Noise,30,Sometimes,Not sure,Sometimes,Sometimes,Sometimes,Sometimes,No,No
+17,Male,HSC,Single,City,7,Yes,60,Morning,15,Yes,No,0,Facebook,Sometimes,Education,Yes,No,Yes,Yes,No,Others,30,Rarely,No,Often,Sometimes,Yes,No,No,No
+17,Male,HSC,Single,City,1,No,2,Late Night,15,No,Yes,8,TikTok,Very Often,Entertainment,Yes,Yes,Yes,No,Yes,Notifications,3,Often,Yes,Often,Sometimes,Sometimes,No,Sometimes,Not sure
+17,Male,HSC,Single,Suburban,4,Yes,30,Evening,60,Yes,Yes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,No,Yes,Daydreams,3,Sometimes,No,Often,No,Yes,Yes,Yes,No
+20,Male,HSC,Single,City,6,Yes,60,Evening,0,Yes,Yes,2,YouTube,Very Often,Entertainment,Yes,Yes,Yes,Yes,No,Others,30,Sometimes,Not sure,Sometimes,Sometimes,Yes,Yes,Sometimes,No
+18,Male,HSC,Single,City,1,Yes,15,Late Night,30,No,Yes,4,Facebook,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Yes,Often,No,Yes,No,Sometimes,Not sure
+17,Male,HSC,Single,City,2,Sometimes,15,Late Night,30,No,Yes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,10,Often,Not sure,Sometimes,Yes,No,Yes,No,No
+17,Male,HSC,Single,City,2,No,10,Evening,0,No,Sometimes,6,TikTok,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Daydreams,15,Rarely,Yes,Sometimes,Yes,No,No,No,No
+18,Male,HSC,Single,City,2,Sometimes,15,Morning,15,Yes,Yes,2,Facebook,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Notifications,10,Sometimes,No,Often,No,Yes,Yes,No,Not sure
+19,Male,HSC,Single,City,1,Sometimes,15,Evening,15,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Yes,No,Yes,Sometimes,Daydreams,15,Often,Not sure,Never,Sometimes,Yes,Yes,Sometimes,Not sure
+17,Male,HSC,Single,City,4,No,15,Evening,15,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,15,Often,Yes,Often,No,No,Yes,No,No
+16,Male,HSC,Single,City,4,Yes,15,Evening,15,No,Yes,4,YouTube,Very Often,Entertainment,Yes,Yes,Yes,No,Yes,Notifications,15,Sometimes,Yes,Never,Sometimes,Sometimes,Yes,No,Not sure
+17,Male,HSC,In-Relationship,City,4,Yes,30,Evening,0,No,Sometimes,4,Facebook,Rarely,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,30,Often,Yes,Sometimes,No,Yes,No,No,No
+18,Male,HSC,Single,Suburban,2,Yes,5,Late Night,15,Yes,Sometimes,8,Facebook,Rarely,Entertainment,Yes,Yes,Yes,Yes,Yes,Notifications,30,Often,Yes,Often,Sometimes,Sometimes,No,No,No
+18,Male,HSC,In-Relationship,City,2,Sometimes,15,Evening,15,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,10,Sometimes,Yes,Sometimes,Yes,Yes,No,No,Yes
+17,Male,HSC,Single,City,2,Yes,15,Evening,30,No,Yes,8,Facebook,Rarely,Entertainment,Yes,No,Yes,Yes,Yes,Noise,15,Rarely,Not sure,Sometimes,Yes,No,No,No,No
+18,Male,HSC,In-Relationship,City,4,Yes,30,Late Night,30,No,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Noise,30,Often,Not sure,Sometimes,Yes,No,Sometimes,No,No
+17,Male,HSC,Single,Suburban,4,Yes,30,Evening,30,No,Sometimes,4,Instagram,Rarely,Entertainment,Yes,Yes,No,No,Yes,Daydreams,30,Sometimes,Yes,Never,Sometimes,No,No,No,No
+17,Male,HSC,Single,City,4,Sometimes,15,Evening,15,No,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Notifications,15,Sometimes,Yes,Often,Sometimes,Yes,Sometimes,Sometimes,Yes
+19,Male,HSC,In-Relationship,City,1,Sometimes,30,Evening,30,No,Yes,8,Facebook,Rarely,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,30,Often,Yes,Often,Sometimes,Sometimes,No,No,Yes
+17,Male,HSC,In-Relationship,City,2,Sometimes,15,Evening,60,No,Sometimes,6,Twitter,Sometimes,Entertainment,Yes,Yes,Yes,No,Sometimes,Daydreams,15,Sometimes,Yes,Never,No,No,No,No,Not sure
+17,Male,HSC,Single,City,4,Sometimes,15,Morning,0,Yes,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,30,Rarely,Not sure,Often,Sometimes,Yes,Sometimes,No,Not sure
+17,Male,HSC,Single,City,4,Sometimes,15,Morning,30,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Yes,Daydreams,10,Sometimes,Not sure,Sometimes,Yes,Yes,Sometimes,Yes,No
+17,Male,HSC,Single,City,7,Yes,60,Evening,60,Yes,No,2,YouTube,Never,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Never,No,Never,Sometimes,Sometimes,Yes,No,Yes
+17,Male,HSC,In-Relationship,City,1,Sometimes,2,Morning,30,No,Yes,6,Facebook,Very Often,Entertainment,Yes,Yes,No,No,Yes,Noise,15,Often,Not sure,Often,Sometimes,No,Sometimes,No,Not sure
+18,Male,HSC,Single,City,4,Sometimes,30,Morning,0,Yes,Yes,0,YouTube,Never,Entertainment,Yes,No,No,Yes,Sometimes,Daydreams,15,Sometimes,Yes,Rarely,No,Yes,Sometimes,No,No
+18,Male,HSC,Single,City,4,Yes,60,Morning,60,Yes,Yes,0,Facebook,Sometimes,Entertainment,Yes,No,Yes,Yes,Yes,Daydreams,30,Sometimes,Yes,Rarely,Yes,Yes,Yes,No,Yes
+18,Male,HSC,Single,City,4,No,30,Morning,60,No,Yes,6,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,30,Often,Not sure,Often,Sometimes,Yes,Sometimes,No,Not sure
+18,Male,HSC,Single,City,7,Yes,60,Evening,60,Yes,Sometimes,2,YouTube,Never,Education,Yes,No,Yes,Yes,Sometimes,Noise,30,Often,Yes,Never,Yes,Yes,Sometimes,Sometimes,Not sure
+17,Male,HSC,Single,City,1,Yes,10,Morning,15,No,Yes,6,Facebook,Sometimes,Entertainment,Yes,Yes,No,Yes,Yes,Notifications,15,Often,Yes,Often,Sometimes,No,No,No,Yes
+17,Male,HSC,Single,City,2,No,10,Late Night,30,No,Yes,4,YouTube,Very Often,Entertainment,Yes,Yes,Yes,No,Yes,Noise,10,Often,Yes,Sometimes,Yes,Yes,No,No,Yes
+18,Male,HSC,In-Relationship,City,1,Sometimes,15,Late Night,15,No,Yes,6,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Often,Yes,Sometimes,Sometimes,No,Yes
+17,Male,HSC,In-Relationship,City,1,Sometimes,5,Late Night,15,No,Yes,6,Instagram,Very Often,Entertainment,Yes,Yes,No,No,Yes,Notifications,3,Often,Yes,Sometimes,Yes,No,Sometimes,No,Yes
+17,Male,HSC,Single,City,1,Sometimes,15,Evening,15,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,No,Yes,Yes,Yes,Daydreams,10,Often,Yes,Often,Yes,Yes,No,No,No
+17,Male,HSC,Single,City,4,No,10,Late Night,15,No,Sometimes,6,Instagram,Sometimes,Entertainment,Yes,Yes,No,No,Yes,Daydreams,30,Sometimes,Yes,Never,Sometimes,Sometimes,No,No,Yes
+18,Male,HSC,In-Relationship,City,1,No,2,Late Night,15,Yes,Yes,8,Instagram,Very Often,Entertainment,Yes,Yes,No,No,Yes,Notifications,15,Often,Yes,Often,No,No,No,No,Yes
+17,Male,HSC,Single,City,2,Yes,10,Morning,15,No,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,Yes,No,Notifications,10,Sometimes,Yes,Sometimes,Sometimes,Yes,No,Sometimes,No
+17,Male,HSC,Single,City,2,Sometimes,15,Morning,15,Yes,Yes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,Sometimes,Yes,Sometimes,Daydreams,10,Sometimes,Yes,Often,No,No,No,No,No
+18,Male,HSC,In-Relationship,City,4,Yes,15,Evening,15,No,Yes,6,Instagram,Sometimes,Entertainment,Yes,Yes,No,No,Yes,Daydreams,30,Rarely,Yes,Rarely,Sometimes,Yes,Sometimes,No,No
+18,Male,HSC,Single,City,2,Yes,15,Evening,15,No,No,4,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Notifications,30,Rarely,No,Often,No,Yes,No,No,Yes
+17,Male,HSC,Single,Suburban,1,No,2,Morning,60,No,Yes,8,Twitter,Very Often,Entertainment,Yes,Yes,No,No,No,Daydreams,3,Often,Yes,Often,Yes,No,No,No,Yes
+18,Male,HSC,Single,City,2,Sometimes,5,Morning,15,No,Yes,2,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,Yes,Yes,Notifications,15,Sometimes,Yes,Sometimes,Yes,No,Sometimes,No,Yes
+18,Male,HSC,Single,City,4,Sometimes,15,Evening,30,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,Yes,No,No,No,Daydreams,15,Often,Yes,Sometimes,No,Yes,Sometimes,No,Not sure
+17,Male,HSC,Single,City,2,Sometimes,2,Late Night,15,No,Yes,4,YouTube,Very Often,Entertainment,Yes,Yes,Yes,No,Sometimes,Noise,10,Often,Yes,Often,Yes,Sometimes,No,No,Not sure
+18,Male,HSC,Single,City,4,No,10,Morning,30,Yes,Yes,4,TikTok,Very Often,Entertainment,Yes,Yes,No,No,Yes,Notifications,10,Sometimes,Yes,Sometimes,Yes,No,No,No,Yes
+17,Female,HSC,Single,City,2,Sometimes,10,Late Night,15,No,Yes,6,YouTube,Very Often,Entertainment,Yes,Yes,Yes,No,No,Others,10,Often,Yes,Often,No,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,15,Late Night,15,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,No,No,Yes,Sometimes,Daydreams,30,Often,Yes,Sometimes,Sometimes,Yes,Yes,Yes,No
+17,Male,HSC,Single,City,4,Yes,15,Morning,60,Yes,Sometimes,2,Facebook,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Rarely,No,Sometimes,No,No,Sometimes,Sometimes,Yes
+18,Male,HSC,Single,City,1,Sometimes,5,Morning,15,No,Yes,4,Facebook,Sometimes,Entertainment,Yes,Yes,No,Yes,Sometimes,Notifications,10,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes
+17,Female,HSC,Single,City,2,Sometimes,10,Evening,0,No,Sometimes,0,Instagram,Sometimes,Education,Yes,Sometimes,No,Yes,Sometimes,Daydreams,10,Rarely,Not sure,Often,Sometimes,Yes,Yes,Yes,No
+17,Male,HSC,Single,City,4,Sometimes,5,Morning,30,No,No,8,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Yes,Daydreams,30,Often,Not sure,Rarely,Sometimes,Yes,No,Sometimes,Not sure
+19,Male,HSC,Single,City,1,Yes,5,Evening,30,No,Yes,6,YouTube,Sometimes,Entertainment,Yes,Yes,Yes,No,Yes,Daydreams,10,Often,Yes,Never,Sometimes,Sometimes,Sometimes,No,No
+16,Male,HSC,Single,City,2,Yes,30,Morning,30,No,Yes,2,Facebook,Rarely,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Daydreams,30,Rarely,No,Rarely,No,Sometimes,Sometimes,No,No
+18,Male,HSC,In-Relationship,City,4,Sometimes,15,Morning,15,No,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Yes,No,No,Yes,Daydreams,10,Sometimes,Not sure,Rarely,No,Yes,No,Sometimes,Not sure
+18,Male,HSC,Single,City,2,Sometimes,15,Evening,0,No,Sometimes,4,TikTok,Rarely,Entertainment,Yes,Yes,Yes,No,Sometimes,Notifications,15,Often,Yes,Often,Sometimes,Yes,No,No,Yes
+18,Male,HSC,Single,City,2,Sometimes,5,Evening,30,Yes,Yes,8,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,No,Yes,Daydreams,15,Often,No,Sometimes,Sometimes,Yes,No,Sometimes,No
+18,Female,HSC,Single,City,4,Sometimes,30,Morning,0,Yes,Sometimes,4,Facebook,Sometimes,Entertainment,Yes,Sometimes,Sometimes,Sometimes,Yes,Noise,30,Rarely,Not sure,Sometimes,Sometimes,Sometimes,Sometimes,No,Not sure
+18,Male,HSC,Single,City,4,Yes,10,Evening,0,Yes,Yes,0,TV,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Noise,15,Rarely,No,Never,Sometimes,No,Sometimes,No,Not sure
+18,Male,HSC,Single,City,4,Yes,30,Morning,30,No,Sometimes,0,Facebook,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,15,Often,Not sure,Rarely,Yes,No,No,No,Not sure
+18,Male,HSC,Single,City,2,Sometimes,5,Evening,30,No,Yes,2,Others,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Sometimes,No,Yes,Yes,Sometimes,Not sure
+18,Male,HSC,Single,Suburban,7,No,2,Late Night,15,No,Yes,8,Facebook,Very Often,Entertainment,Yes,Yes,No,No,No,Notifications,3,Often,No,Often,No,Yes,No,Yes,Not sure
+18,Female,HSC,Single,City,6,Yes,30,Morning,0,Yes,Sometimes,2,YouTube,Rarely,Education,Yes,Yes,Yes,No,Sometimes,Daydreams,30,Sometimes,Not sure,Often,Sometimes,Yes,No,No,Yes
+17,Female,HSC,Single,City,4,Sometimes,30,Evening,60,No,Sometimes,0,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,Yes,No,Noise,15,Rarely,Yes,Sometimes,No,Yes,No,No,Yes
+16,Female,HSC,Single,City,4,Sometimes,10,Evening,30,No,Yes,0,YouTube,Rarely,Entertainment,Yes,Sometimes,Yes,No,Sometimes,Daydreams,15,Sometimes,Yes,Sometimes,No,Yes,No,No,Yes
+18,Female,HSC,Single,City,6,Yes,60,Late Night,0,No,Yes,4,Instagram,Sometimes,Education,Yes,Yes,Yes,Yes,No,Daydreams,30,Often,No,Often,Sometimes,No,No,Sometimes,Yes
+18,Female,HSC,Single,City,6,Yes,60,Late Night,60,No,Sometimes,4,Instagram,Sometimes,Education,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Sometimes,Yes,Sometimes,Sometimes,No,No,No,Yes
+18,Female,HSC,Single,City,6,Yes,30,Evening,60,Yes,No,0,Facebook,Rarely,Education,Yes,Sometimes,No,Yes,No,Daydreams,30,Rarely,Yes,Often,Sometimes,No,Yes,Yes,Yes
+17,Female,HSC,Single,City,6,Yes,30,Late Night,0,Yes,No,4,YouTube,Rarely,Education,Yes,Yes,Yes,Yes,No,Daydreams,30,Sometimes,Not sure,Sometimes,No,No,No,Sometimes,No
+17,Female,HSC,Single,City,4,Yes,15,Evening,30,No,No,2,Facebook,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Noise,30,Sometimes,No,Never,No,Yes,No,No,No
+17,Female,HSC,In-Relationship,City,4,Yes,10,Late Night,30,No,No,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,No,No,Sometimes,Daydreams,30,Sometimes,Yes,Sometimes,No,Yes,No,No,Yes
+18,Female,HSC,Single,City,6,Sometimes,30,Late Night,60,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,No,No,Sometimes,Daydreams,30,Often,Yes,Sometimes,No,Yes,Sometimes,No,No
+17,Female,HSC,In-Relationship,City,4,Sometimes,30,Late Night,0,No,Yes,0,Instagram,Sometimes,Entertainment,Yes,Sometimes,No,No,No,Daydreams,30,Sometimes,Yes,Often,Sometimes,Sometimes,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,6,Yes,30,Morning,30,Yes,No,2,Facebook,Very Often,Education,Yes,Sometimes,Yes,Yes,Sometimes,Noise,15,Sometimes,No,Rarely,Yes,Sometimes,Yes,No,No
+18,Female,HSC,Single,City,6,Yes,60,Morning,60,Yes,Sometimes,4,Facebook,Sometimes,Education,Yes,No,Yes,Yes,Yes,Noise,30,Sometimes,Yes,Sometimes,Sometimes,Yes,No,No,Yes
+17,Female,HSC,Single,City,6,Yes,15,Evening,60,No,Sometimes,2,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,No,Others,30,Often,Yes,Rarely,No,Yes,Sometimes,No,No
+17,Female,HSC,Single,City,6,Sometimes,60,Evening,30,Yes,Sometimes,2,Facebook,Rarely,Entertainment,Yes,Yes,Yes,Yes,No,Noise,30,Sometimes,Not sure,Sometimes,Sometimes,No,No,No,Yes
+17,Female,HSC,Single,Suburban,6,Yes,30,Evening,30,No,Sometimes,2,YouTube,Rarely,Education,Yes,Sometimes,Yes,No,No,Daydreams,15,Rarely,No,Never,No,Yes,No,No,No
+17,Female,HSC,Single,City,6,Sometimes,30,Evening,0,Yes,Yes,2,Facebook,Rarely,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,10,Rarely,Not sure,Often,Yes,Yes,No,No,Not sure
+17,Female,HSC,Single,City,6,No,10,Late Night,0,Yes,Yes,4,YouTube,Sometimes,Education,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Sometimes,Yes,No,No,Sometimes,Not sure
+17,Female,HSC,Single,City,6,Yes,30,Late Night,0,No,Sometimes,0,YouTube,Sometimes,Education,Yes,Sometimes,Yes,No,Sometimes,Others,30,Sometimes,Yes,Rarely,Yes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,6,Yes,60,Late Night,60,No,Yes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Often,Yes,No,Sometimes,Sometimes,Not sure
+18,Female,HSC,Single,City,2,Sometimes,60,Late Night,15,No,Yes,6,Facebook,Very Often,Entertainment,Yes,Sometimes,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Often,Sometimes,No,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,30,Evening,30,No,Sometimes,2,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Noise,30,Sometimes,Yes,Never,Sometimes,Yes,No,No,Not sure
+17,Female,HSC,Single,City,4,Yes,30,Morning,30,Yes,Sometimes,2,YouTube,Rarely,Education,Yes,Sometimes,Yes,No,Sometimes,Daydreams,15,Sometimes,Yes,Never,No,Yes,Sometimes,Yes,No
+17,Female,HSC,Single,City,7,Sometimes,60,Late Night,0,Yes,Yes,2,Others,Rarely,Education,Yes,Sometimes,No,Yes,Sometimes,Daydreams,30,Often,Yes,Often,Yes,No,No,Yes,No
+17,Female,HSC,Single,City,2,Sometimes,10,Morning,15,No,Yes,4,TikTok,Rarely,Entertainment,Yes,Yes,Yes,Yes,Yes,Daydreams,30,Often,Yes,Often,Yes,Yes,Sometimes,Sometimes,Yes
+18,Female,HSC,Single,City,6,Sometimes,60,Morning,60,No,Yes,2,Facebook,Very Often,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Often,Yes,Sometimes,No,Yes,No,Sometimes,Yes
+17,Female,HSC,Single,City,1,Sometimes,10,Late Night,15,No,Yes,4,YouTube,Very Often,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Daydreams,15,Often,Yes,Often,Sometimes,No,No,Sometimes,Yes
+16,Female,HSC,Single,City,6,Yes,60,Late Night,60,Yes,Yes,2,YouTube,Rarely,Entertainment,Yes,Yes,Yes,Yes,Sometimes,Noise,30,Rarely,Not sure,Sometimes,Yes,Yes,No,No,Yes
+18,Female,HSC,Single,City,2,Sometimes,30,Evening,30,No,Sometimes,8,TikTok,Very Often,Entertainment,Yes,Yes,No,Yes,No,Daydreams,10,Sometimes,Yes,Often,No,No,No,Yes,Yes
+17,Female,HSC,Single,City,6,Yes,60,Morning,15,Yes,No,0,TV,Rarely,Education,Yes,Sometimes,Yes,Yes,No,Noise,30,Rarely,No,Rarely,Yes,Yes,No,Sometimes,No
+16,Female,HSC,Single,City,6,Yes,60,Morning,30,Yes,No,0,TV,Never,Education,Yes,No,Yes,No,Sometimes,Others,30,Never,No,Never,No,Yes,Yes,Yes,Yes
+16,Female,HSC,Single,City,6,Yes,30,Evening,60,Yes,Sometimes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Sometimes,Daydreams,30,Sometimes,Not sure,Rarely,No,Sometimes,No,Sometimes,Yes
+17,Female,HSC,Single,City,6,Sometimes,30,Morning,60,No,Yes,4,YouTube,Sometimes,Entertainment,Yes,Yes,No,Yes,Yes,Daydreams,10,Sometimes,Yes,Often,Yes,No,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,10,Evening,15,Yes,Yes,2,Facebook,Never,Entertainment,Yes,Sometimes,No,No,Yes,Notifications,10,Often,Yes,Rarely,No,No,Yes,No,No
+18,Female,HSC,In-Relationship,City,7,No,5,Evening,30,No,Yes,0,Facebook,Sometimes,Entertainment,Yes,Yes,No,No,Yes,Daydreams,3,Often,Yes,Often,Yes,No,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,60,Evening,15,No,Sometimes,4,Instagram,Sometimes,Entertainment,Yes,Sometimes,Yes,No,Sometimes,Noise,30,Rarely,No,Sometimes,No,No,No,No,No
+17,Female,HSC,Single,City,6,Yes,60,Evening,0,No,Sometimes,2,Facebook,Rarely,Entertainment,Yes,Sometimes,No,No,Sometimes,Notifications,30,Never,No,Never,Sometimes,Yes,No,No,No
+18,Female,HSC,Single,City,2,Yes,60,Afternoon,30,Yes,Sometimes,2,Instagram,Sometimes,Education,Yes,Sometimes,Yes,No,No,Daydreams,10,Sometimes,Yes,Sometimes,No,No,Sometimes,No,Not sure
+17,Female,HSC,Single,City,4,Yes,30,Morning,30,No,Sometimes,6,Instagram,Sometimes,Entertainment,Yes,Sometimes,Yes,Yes,Yes,Daydreams,30,Sometimes,Yes,Rarely,Sometimes,Sometimes,No,No,Yes
+17,Female,HSC,Single,City,4,Yes,10,Evening,15,Yes,Sometimes,4,Instagram,Sometimes,Entertainment,Yes,Yes,Yes,No,No,Noise,30,Sometimes,Not sure,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Not sure
+17,Female,HSC,Single,City,4,Sometimes,30,Evening,60,No,No,6,Instagram,Very Often,Entertainment,Yes,Yes,Yes,No,No,Daydreams,30,Rarely,No,Sometimes,Yes,Yes,Sometimes,No,No
+16,Female,HSC,Single,City,6,Yes,15,Evening,30,Yes,Yes,2,Facebook,Sometimes,Entertainment,Yes,Sometimes,No,Yes,Sometimes,Daydreams,15,Sometimes,Yes,Rarely,Yes,No,No,No,No
+18,Female,HSC,Single,Suburban,6,Yes,5,Late Night,15,No,Yes,6,TikTok,Sometimes,Entertainment,Yes,Yes,No,Yes,No,Daydreams,15,Often,Yes,Often,Sometimes,Yes,No,No,Yes
+17,Female,HSC,Single,City,6,Sometimes,60,Evening,60,Yes,Yes,0,Instagram,Rarely,Entertainment,Yes,Yes,Yes,Yes,No,Daydreams,30,Sometimes,Yes,Sometimes,No,Yes,No,No,No
+16,Female,HSC,Single,City,4,Sometimes,30,Morning,30,Yes,Yes,8,YouTube,Very Often,Entertainment,Yes,Yes,No,Yes,Yes,Notifications,15,Often,Yes,Sometimes,Yes,Yes,No,No,Yes
