@@ -1,9 +1,10 @@
-import pandas
-import numpy
-import matplotlib
-import streamlit
-import sys
-import os
-import sys
-import SMOTE
-import sklearn
+pandas
+numpy
+matplotlib
+streamlit
+sys
+os
+sys
+SMOTE
+sklearn
+
