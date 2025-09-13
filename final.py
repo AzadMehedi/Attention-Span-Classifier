@@ -30,7 +30,7 @@ if page == "🏠 Home":
 
     st.markdown("""
     ### 📖 Project Overview
-    This project is developed based on my `M.Sc. thesis` titled 
+    This project is developed based on my M.Sc. thesis, titled 
     #####  `"An Assessment of Attention Span among College Students in Dhaka: Patterns, Potential Implications, and Influencing Factors"`
     """)
     '---'
@@ -1125,6 +1125,7 @@ elif page == "😎 Prediction":
         # Output
         st.subheader('`Predicted Attention Span Category`')
         st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
+
 
 
 
