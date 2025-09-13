@@ -749,8 +749,8 @@ elif page == "📊 Analysis":
 
     with col4:
         corr = st.checkbox('Correlation Coefficients Analysis')
-        st.write('### `Correlation Coefficients Analysis Results`')
     if corr:
+        st.write('### `Correlation Coefficients Analysis Results`')
         st.dataframe(corr_df)
 
     with col5:
@@ -1138,6 +1138,7 @@ elif page == "😎 Prediction":
         # Output
         st.subheader('`Predicted Attention Span Category`')
         st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
+
 
 
 
