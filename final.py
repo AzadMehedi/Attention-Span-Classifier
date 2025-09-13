@@ -1093,6 +1093,7 @@ elif page == "😎 Prediction":
         st.write(f"**`Accuracy with TOP 10 features`:** `{acc_top*100:.2f}%`")
     with col3:
         top10_imp = st.checkbox('`Feature Importance(Top 10)`')
-        if top10_imp:
-            st.dataframe(feature_importance_df.head(10))
+    if top10_imp:
+        st.dataframe(feature_importance_df.head(10))
+
 
