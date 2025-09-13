@@ -1079,7 +1079,7 @@ elif page == "😎 Prediction":
             pred_encoded = model_top.predict(input_scaled)
             pred_class = le.inverse_transform(pred_encoded)[0]
             pred_proba = model_top.predict_proba(input_scaled)[0][pred_encoded[0]] * 100
-            st.write(f" ## `Predicted Category`: **`{pred_class}`** (`{pred_proba:.2f}% probability`)")
+            st.write(f" ### `Predicted Category`: **`{pred_class}`** (`{pred_proba:.2f}% probability`)")
 
     
 
@@ -1097,6 +1097,7 @@ elif page == "😎 Prediction":
         top10_imp = st.checkbox('`Feature Importance(Top 10)`')
     if top10_imp:
         st.dataframe(feature_importance_df.head(10))
+
 
 
 
