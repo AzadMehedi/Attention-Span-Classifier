@@ -308,31 +308,31 @@ elif page == "📊 Analysis":
     with col1:
         show_num_stat = st.checkbox('Numeric Features Stats')
     if show_num_stat:
-        st.write('Numeric Features Statistics')
+        st.write('`Numeric Features Statistics`')
         st.write(numeric_stats)
 
     with col2:
         show_cat_stat = st.checkbox('Categorical Features Stats')
     if show_cat_stat:
-        st.write('Categorical Features Statistics')
+        st.write('`Categorical Features Statistics`')
         st.write(categorical_stats)
 
     with col3:  
         unique_df = st.checkbox('Unique values of Columns')
     if unique_df:
-        st.write('Unique values of Columns')
+        st.write('`Unique values of Columns`')
         st.write(unique_values_df)
 
     with col4:
         n_cols = st.checkbox('Numeric Columns')
     if n_cols:
-        st.write('Numeric Columns List')
+        st.write('`Numeric Columns List`')
         st.write(num_cols)
 
     with col5:
         c_cols = st.checkbox('Categorical Columns')
     if c_cols:
-        st.write('Categorical Columns List')
+        st.write('`Categorical Columns List`')
         st.write(cat_cols)
     st.write('---')
         
@@ -1138,6 +1138,7 @@ elif page == "😎 Prediction":
         # Output
         st.subheader('`Predicted Attention Span Category`')
         st.subheader(f"**`{pred_class}`** (`{prob_percent:.2f}%` probability for this input)")
+
 
 
 
