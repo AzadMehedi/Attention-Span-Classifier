@@ -409,14 +409,14 @@ The Model correctly classified:
 - `84%` of `Low attention class` (31 out of 37)
 - `76%` of `Medium attention class` (28 out of 37)
 
-![Confusion Matrix](https://raw.githubusercontent.com/AzadMehedi/Attention-Span-Classifier/main/imgs/confusion_matrix.png)
+![alt text](<img width="807" height="919" alt="confusion_matrix" src="https://github.com/user-attachments/assets/ebe89f77-0d9f-434b-925d-de52dbe7f251" />)
 
 ---
 
 <h2><a class="anchor" id="influensing-factor"></a>Influensing Factors</h2>
 
 ### **`Feature Importance Ranking`**
-![Feature Importance](https://raw.githubusercontent.com/AzadMehedi/Attention-Span-Classifier/main/imgs/feature_importance.png)
+![alt text](<img width="1193" height="922" alt="top_a0" src="https://github.com/user-attachments/assets/e7b59f21-f10e-46ab-a55a-a0dcbd0df54c" />)
 
 
 
@@ -472,6 +472,7 @@ Data Scientist & Statistical Data/Business Analyst`
 
 📧 [Email](azadmehedi12121@gmail.com)
 🔗 [LinkedIn](https://www.linkedin.com/in/mehediazad/)  
+
 
 
 
