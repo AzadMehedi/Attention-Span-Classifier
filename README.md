@@ -11,7 +11,7 @@
 
 ## 📌 Table of Contents
 - <a href="#overview">Overview</a>
-- <a hred="#bacground">Bakground of The Research</a> 
+- <a hred="#background">Bakground of The Research</a> 
 - <a href="#objectives">Research Objectives</a>
 - <a href="#dataset">Dataset</a>
 - <a href="#tools--technologies">Tools & Technologies</a>
@@ -38,7 +38,7 @@
 Understanding the `attention span` of students in the digital age holds considerable importance, particularly for educational institutions and stakeholders aiming to enhance academic outcomes and mental well-being. As attention is one of the foundational elements of learning, any shift or disruption in students’ ability to maintain focus may directly influence their academic performance, classroom behavior, and overall engagement with learning materials. So, this research will deep dive into students attention span related analysises & classify students into `HIGH`, `MEDIUM` & `LOW` attentiion categories using `XGBoost Classifier` machine learning model.
 
 ---
-<h2><a class="anchor" id="bacground"></a>Bakground of The Research</h2>
+<h2><a class="anchor" id="background"></a>Bakground of The Research</h2>
 
 - Students Attention span plays a crucial role in academic performance that lead a successful career & shines in personal life. 
 - Attention span of students are shrinking, both locally & globally.
@@ -409,105 +409,15 @@ The Model correctly classified:
 - `84%` of `Low attention class` (31 out of 37)
 - `76%` of `Medium attention class` (28 out of 37)
 
-![alt text](image-3.png)
+![alt text](imgs/confusion_matrix.png)
 
 ---
 
 <h2><a class="anchor" id="influensing-factor"></a>Influensing Factors</h2>
 
 ### **`Feature Importance Ranking`**
-<!-- ![alt text](image-4.png) -->
+![alt text](imgs/feature_importance.png)
 
-# Feature Importance Ranking
-
-<table>
-  <tr>
-    <th>Rank</th>
-    <th>Feature</th>
-    <th>Importance</th>
-    <th>Visual Scale (0 - 0.12)</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>max_continuous_reading_time</td>
-    <td>0.1201</td>
-    <td>
-      <span style="background-color:#FF4C4C; display:inline-block; width:100%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Study_hours_home</td>
-    <td>0.0873</td>
-    <td>
-      <span style="background-color:#4C9AFF; display:inline-block; width:73%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>practice_meditation</td>
-    <td>0.0562</td>
-    <td>
-      <span style="background-color:#4CFF88; display:inline-block; width:47%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>relationship_status</td>
-    <td>0.0445</td>
-    <td>
-      <span style="background-color:#FFD24C; display:inline-block; width:37%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Watch_short_videos</td>
-    <td>0.0423</td>
-    <td>
-      <span style="background-color:#FF8C4C; display:inline-block; width:35%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>dificulty_focusing_online_class</td>
-    <td>0.0395</td>
-    <td>
-      <span style="background-color:#A64CFF; display:inline-block; width:33%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>use_digital_devices_while_studying</td>
-    <td>0.0370</td>
-    <td>
-      <span style="background-color:#4CFFA5; display:inline-block; width:31%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>regular_physical_activity</td>
-    <td>0.0372</td>
-    <td>
-      <span style="background-color:#FF4CA3; display:inline-block; width:31%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>attention_in_class</td>
-    <td>0.0370</td>
-    <td>
-      <span style="background-color:#4CFFEC; display:inline-block; width:31%; height:15px;"></span>
-    </td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>mental_fatigue_frequency</td>
-    <td>0.0340</td>
-    <td>
-      <span style="background-color:#FFB84C; display:inline-block; width:28%; height:15px;"></span>
-    </td>
-  </tr>
-</table>
 
 
 ### The Model confirms clear association between
@@ -562,5 +472,6 @@ Data Scientist & Statistical Data/Business Analyst`
 
 📧 [Email](azadmehedi12121@gmail.com)
 🔗 [LinkedIn](https://www.linkedin.com/in/mehediazad/)  
+
 
 
