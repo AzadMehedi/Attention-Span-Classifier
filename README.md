@@ -11,7 +11,7 @@
 
 ## 📌 Table of Contents
 - <a href="#overview">Overview</a>
-- <a hred="#background">Bakground of The Research</a> 
+- <a href="#background">Bakground of The Research</a> 
 - <a href="#objectives">Research Objectives</a>
 - <a href="#dataset">Dataset</a>
 - <a href="#tools--technologies">Tools & Technologies</a>
@@ -409,14 +409,14 @@ The Model correctly classified:
 - `84%` of `Low attention class` (31 out of 37)
 - `76%` of `Medium attention class` (28 out of 37)
 
-![alt text](imgs/confusion_matrix.png)
+![Confusion Matrix](https://raw.githubusercontent.com/AzadMehedi/Attention-Span-Classifier/main/imgs/confusion_matrix.png)
 
 ---
 
 <h2><a class="anchor" id="influensing-factor"></a>Influensing Factors</h2>
 
 ### **`Feature Importance Ranking`**
-![alt text](imgs/feature_importance.png)
+![Feature Importance](https://raw.githubusercontent.com/AzadMehedi/Attention-Span-Classifier/main/imgs/feature_importance.png)
 
 
 
@@ -472,6 +472,7 @@ Data Scientist & Statistical Data/Business Analyst`
 
 📧 [Email](azadmehedi12121@gmail.com)
 🔗 [LinkedIn](https://www.linkedin.com/in/mehediazad/)  
+
 
 
 
